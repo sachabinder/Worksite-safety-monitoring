@@ -1,0 +1,750 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 1024,
+        "width": 1280
+    },
+    "objects": [
+        {
+            "id": 502638771,
+            "classId": 1301084,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "momin2711",
+            "createdAt": "2020-08-20T04:23:17.411Z",
+            "updatedAt": "2020-08-28T05:54:49.326Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        650,
+                        677
+                    ],
+                    [
+                        665,
+                        779
+                    ],
+                    [
+                        725,
+                        769
+                    ],
+                    [
+                        703,
+                        670
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 502636698,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Tanziba",
+            "createdAt": "2020-08-20T03:49:11.908Z",
+            "updatedAt": "2020-08-28T05:54:49.326Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        121,
+                        256
+                    ],
+                    [
+                        159,
+                        310
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 502638770,
+            "classId": 1301084,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "momin2711",
+            "createdAt": "2020-08-20T04:23:17.411Z",
+            "updatedAt": "2020-08-28T05:54:49.326Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        1028,
+                        868
+                    ],
+                    [
+                        1093,
+                        855
+                    ],
+                    [
+                        1135,
+                        848
+                    ],
+                    [
+                        1150,
+                        827
+                    ],
+                    [
+                        1053,
+                        602
+                    ],
+                    [
+                        1056,
+                        588
+                    ],
+                    [
+                        1045,
+                        581
+                    ],
+                    [
+                        1005,
+                        588
+                    ],
+                    [
+                        941,
+                        682
+                    ],
+                    [
+                        964,
+                        725
+                    ],
+                    [
+                        989,
+                        697
+                    ],
+                    [
+                        1017,
+                        767
+                    ],
+                    [
+                        995,
+                        795
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 502636703,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Tanziba",
+            "createdAt": "2020-08-20T03:49:19.904Z",
+            "updatedAt": "2020-08-28T05:54:49.326Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        725,
+                        604
+                    ],
+                    [
+                        748,
+                        646
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 502636710,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Tanziba",
+            "createdAt": "2020-08-20T03:49:33.472Z",
+            "updatedAt": "2020-08-28T05:54:49.326Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        1127,
+                        916
+                    ],
+                    [
+                        1179,
+                        981
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 502638768,
+            "classId": 1301084,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "momin2711",
+            "createdAt": "2020-08-20T04:23:17.411Z",
+            "updatedAt": "2020-08-28T05:54:49.326Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        788,
+                        327
+                    ],
+                    [
+                        868,
+                        313
+                    ],
+                    [
+                        874,
+                        348
+                    ],
+                    [
+                        864,
+                        365
+                    ],
+                    [
+                        803,
+                        372
+                    ],
+                    [
+                        796,
+                        350
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 502638767,
+            "classId": 1301083,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "momin2711",
+            "createdAt": "2020-08-20T04:23:17.411Z",
+            "updatedAt": "2020-08-28T05:54:49.326Z",
+            "tags": [],
+            "classTitle": "Rebars",
+            "points": {
+                "exterior": [
+                    [
+                        403,
+                        367
+                    ],
+                    [
+                        460,
+                        384
+                    ],
+                    [
+                        551,
+                        415
+                    ],
+                    [
+                        582,
+                        360
+                    ],
+                    [
+                        459,
+                        316
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 502636712,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Tanziba",
+            "createdAt": "2020-08-20T03:49:36.683Z",
+            "updatedAt": "2020-08-28T05:54:49.326Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        1156,
+                        912
+                    ],
+                    [
+                        1210,
+                        984
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 502636718,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Tanziba",
+            "createdAt": "2020-08-20T03:49:49.606Z",
+            "updatedAt": "2020-08-28T05:54:49.326Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        933,
+                        827
+                    ],
+                    [
+                        965,
+                        857
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 502638766,
+            "classId": 1301084,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "momin2711",
+            "createdAt": "2020-08-20T04:23:17.411Z",
+            "updatedAt": "2020-08-28T05:54:49.326Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        578,
+                        594
+                    ],
+                    [
+                        583,
+                        703
+                    ],
+                    [
+                        641,
+                        695
+                    ],
+                    [
+                        631,
+                        592
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 502636744,
+            "classId": 1301075,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Tanziba",
+            "createdAt": "2020-08-20T03:50:14.141Z",
+            "updatedAt": "2020-08-28T05:54:49.326Z",
+            "tags": [],
+            "classTitle": "Excavator",
+            "points": {
+                "exterior": [
+                    [
+                        537,
+                        53
+                    ],
+                    [
+                        730,
+                        224
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 502636748,
+            "classId": 1301077,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Tanziba",
+            "createdAt": "2020-08-20T03:50:25.156Z",
+            "updatedAt": "2020-08-28T05:54:49.326Z",
+            "tags": [],
+            "classTitle": "Mobile_crane",
+            "points": {
+                "exterior": [
+                    [
+                        586,
+                        0
+                    ],
+                    [
+                        986,
+                        395
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 502638800,
+            "classId": 1301084,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "momin2711",
+            "createdAt": "2020-08-20T04:23:50.220Z",
+            "updatedAt": "2020-08-28T05:54:49.326Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        910,
+                        847
+                    ],
+                    [
+                        969,
+                        827
+                    ],
+                    [
+                        1018,
+                        766
+                    ],
+                    [
+                        989,
+                        696
+                    ],
+                    [
+                        965,
+                        725
+                    ],
+                    [
+                        918,
+                        729
+                    ],
+                    [
+                        888,
+                        780
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 502677770,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Tanziba",
+            "createdAt": "2020-08-20T08:55:50.477Z",
+            "updatedAt": "2020-08-28T05:54:49.326Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        622,
+                        27
+                    ],
+                    [
+                        641,
+                        64
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 502639004,
+            "classId": 1301084,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "momin2711",
+            "createdAt": "2020-08-20T04:26:50.713Z",
+            "updatedAt": "2020-08-28T05:54:49.326Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        817,
+                        636
+                    ],
+                    [
+                        852,
+                        776
+                    ],
+                    [
+                        898,
+                        763
+                    ],
+                    [
+                        851,
+                        626
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 502677991,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Tanziba",
+            "createdAt": "2020-08-20T08:58:21.881Z",
+            "updatedAt": "2020-08-28T05:54:49.326Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        170,
+                        362
+                    ],
+                    [
+                        196,
+                        400
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 502678030,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Tanziba",
+            "createdAt": "2020-08-20T08:59:05.709Z",
+            "updatedAt": "2020-08-28T05:54:49.326Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        476,
+                        652
+                    ],
+                    [
+                        499,
+                        674
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 502678034,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Tanziba",
+            "createdAt": "2020-08-20T08:59:10.703Z",
+            "updatedAt": "2020-08-28T05:54:49.326Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        579,
+                        631
+                    ],
+                    [
+                        598,
+                        655
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 502678036,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Tanziba",
+            "createdAt": "2020-08-20T08:59:13.136Z",
+            "updatedAt": "2020-08-28T05:54:49.326Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        584,
+                        652
+                    ],
+                    [
+                        610,
+                        673
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 502984799,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Antor",
+            "createdAt": "2020-08-21T12:32:30.558Z",
+            "updatedAt": "2020-08-28T05:54:49.326Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        1218,
+                        28
+                    ],
+                    [
+                        1241,
+                        68
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 504937401,
+            "classId": 1301084,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Antor",
+            "createdAt": "2020-08-28T05:54:29.964Z",
+            "updatedAt": "2020-08-28T05:54:49.326Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        686,
+                        932
+                    ],
+                    [
+                        667,
+                        849
+                    ],
+                    [
+                        529,
+                        880
+                    ],
+                    [
+                        533,
+                        935
+                    ],
+                    [
+                        562,
+                        972
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 504937406,
+            "classId": 1301084,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Antor",
+            "createdAt": "2020-08-28T05:54:35.936Z",
+            "updatedAt": "2020-08-28T05:54:49.326Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        756,
+                        898
+                    ],
+                    [
+                        748,
+                        841
+                    ],
+                    [
+                        750,
+                        775
+                    ],
+                    [
+                        838,
+                        775
+                    ],
+                    [
+                        885,
+                        769
+                    ],
+                    [
+                        894,
+                        818
+                    ],
+                    [
+                        894,
+                        842
+                    ],
+                    [
+                        890,
+                        880
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 504937412,
+            "classId": 1301084,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Antor",
+            "createdAt": "2020-08-28T05:54:43.280Z",
+            "updatedAt": "2020-08-28T05:54:47.024Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        1044,
+                        575
+                    ],
+                    [
+                        1078,
+                        586
+                    ],
+                    [
+                        1100,
+                        527
+                    ],
+                    [
+                        1062,
+                        451
+                    ],
+                    [
+                        1007,
+                        462
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 504937415,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Antor",
+            "createdAt": "2020-08-28T05:54:49.009Z",
+            "updatedAt": "2020-08-28T05:54:49.009Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        1012,
+                        527
+                    ],
+                    [
+                        1055,
+                        589
+                    ]
+                ],
+                "interior": []
+            }
+        }
+    ]
+}

@@ -1,0 +1,1662 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 1024,
+        "width": 1280
+    },
+    "objects": [
+        {
+            "id": 503107901,
+            "classId": 1301080,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Shoring",
+            "points": {
+                "exterior": [
+                    [
+                        1163,
+                        592
+                    ],
+                    [
+                        1278,
+                        818
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107900,
+            "classId": 1301080,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Shoring",
+            "points": {
+                "exterior": [
+                    [
+                        996,
+                        541
+                    ],
+                    [
+                        1064,
+                        580
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107898,
+            "classId": 1301083,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Rebars",
+            "points": {
+                "exterior": [
+                    [
+                        423,
+                        534
+                    ],
+                    [
+                        438,
+                        445
+                    ],
+                    [
+                        498,
+                        445
+                    ],
+                    [
+                        487,
+                        533
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107897,
+            "classId": 1301084,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        786,
+                        161
+                    ],
+                    [
+                        770,
+                        111
+                    ],
+                    [
+                        778,
+                        47
+                    ],
+                    [
+                        775,
+                        35
+                    ],
+                    [
+                        778,
+                        31
+                    ],
+                    [
+                        803,
+                        29
+                    ],
+                    [
+                        806,
+                        34
+                    ],
+                    [
+                        814,
+                        65
+                    ],
+                    [
+                        818,
+                        104
+                    ],
+                    [
+                        817,
+                        118
+                    ],
+                    [
+                        813,
+                        157
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107896,
+            "classId": 1301084,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        1078,
+                        131
+                    ],
+                    [
+                        1067,
+                        113
+                    ],
+                    [
+                        1071,
+                        104
+                    ],
+                    [
+                        1070,
+                        98
+                    ],
+                    [
+                        1067,
+                        95
+                    ],
+                    [
+                        1063,
+                        93
+                    ],
+                    [
+                        1069,
+                        72
+                    ],
+                    [
+                        1079,
+                        49
+                    ],
+                    [
+                        1079,
+                        42
+                    ],
+                    [
+                        1084,
+                        28
+                    ],
+                    [
+                        1090,
+                        24
+                    ],
+                    [
+                        1102,
+                        23
+                    ],
+                    [
+                        1112,
+                        46
+                    ],
+                    [
+                        1117,
+                        60
+                    ],
+                    [
+                        1118,
+                        75
+                    ],
+                    [
+                        1118,
+                        81
+                    ],
+                    [
+                        1111,
+                        84
+                    ],
+                    [
+                        1091,
+                        131
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107895,
+            "classId": 1301084,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        1110,
+                        41
+                    ],
+                    [
+                        1114,
+                        21
+                    ],
+                    [
+                        1129,
+                        21
+                    ],
+                    [
+                        1149,
+                        55
+                    ],
+                    [
+                        1147,
+                        60
+                    ],
+                    [
+                        1140,
+                        77
+                    ],
+                    [
+                        1119,
+                        127
+                    ],
+                    [
+                        1105,
+                        130
+                    ],
+                    [
+                        1100,
+                        111
+                    ],
+                    [
+                        1111,
+                        84
+                    ],
+                    [
+                        1118,
+                        81
+                    ],
+                    [
+                        1118,
+                        70
+                    ],
+                    [
+                        1117,
+                        59
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107894,
+            "classId": 1301084,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        729,
+                        582
+                    ],
+                    [
+                        726,
+                        570
+                    ],
+                    [
+                        721,
+                        567
+                    ],
+                    [
+                        707,
+                        565
+                    ],
+                    [
+                        705,
+                        557
+                    ],
+                    [
+                        703,
+                        528
+                    ],
+                    [
+                        700,
+                        519
+                    ],
+                    [
+                        698,
+                        489
+                    ],
+                    [
+                        699,
+                        486
+                    ],
+                    [
+                        700,
+                        462
+                    ],
+                    [
+                        721,
+                        461
+                    ],
+                    [
+                        723,
+                        475
+                    ],
+                    [
+                        728,
+                        476
+                    ],
+                    [
+                        731,
+                        493
+                    ],
+                    [
+                        733,
+                        519
+                    ],
+                    [
+                        732,
+                        534
+                    ],
+                    [
+                        737,
+                        534
+                    ],
+                    [
+                        735,
+                        583
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107892,
+            "classId": 1301083,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Rebars",
+            "points": {
+                "exterior": [
+                    [
+                        1075,
+                        223
+                    ],
+                    [
+                        1133,
+                        219
+                    ],
+                    [
+                        1172,
+                        306
+                    ],
+                    [
+                        1188,
+                        305
+                    ],
+                    [
+                        1204,
+                        337
+                    ],
+                    [
+                        1165,
+                        343
+                    ],
+                    [
+                        1157,
+                        328
+                    ],
+                    [
+                        1116,
+                        329
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107890,
+            "classId": 1301083,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Rebars",
+            "points": {
+                "exterior": [
+                    [
+                        1224,
+                        607
+                    ],
+                    [
+                        1279,
+                        596
+                    ],
+                    [
+                        1279,
+                        664
+                    ],
+                    [
+                        1246,
+                        667
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107887,
+            "classId": 1301080,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Shoring",
+            "points": {
+                "exterior": [
+                    [
+                        420,
+                        366
+                    ],
+                    [
+                        584,
+                        391
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107886,
+            "classId": 1301080,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Shoring",
+            "points": {
+                "exterior": [
+                    [
+                        447,
+                        336
+                    ],
+                    [
+                        577,
+                        363
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107885,
+            "classId": 1301080,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Shoring",
+            "points": {
+                "exterior": [
+                    [
+                        443,
+                        317
+                    ],
+                    [
+                        573,
+                        335
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107884,
+            "classId": 1301080,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Shoring",
+            "points": {
+                "exterior": [
+                    [
+                        434,
+                        264
+                    ],
+                    [
+                        555,
+                        306
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107883,
+            "classId": 1301080,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Shoring",
+            "points": {
+                "exterior": [
+                    [
+                        440,
+                        227
+                    ],
+                    [
+                        587,
+                        284
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107882,
+            "classId": 1301080,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Shoring",
+            "points": {
+                "exterior": [
+                    [
+                        378,
+                        196
+                    ],
+                    [
+                        416,
+                        238
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107881,
+            "classId": 1301080,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Shoring",
+            "points": {
+                "exterior": [
+                    [
+                        331,
+                        220
+                    ],
+                    [
+                        437,
+                        262
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107880,
+            "classId": 1301080,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Shoring",
+            "points": {
+                "exterior": [
+                    [
+                        320,
+                        245
+                    ],
+                    [
+                        438,
+                        296
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107879,
+            "classId": 1301080,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Shoring",
+            "points": {
+                "exterior": [
+                    [
+                        198,
+                        254
+                    ],
+                    [
+                        310,
+                        281
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107878,
+            "classId": 1301080,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Shoring",
+            "points": {
+                "exterior": [
+                    [
+                        184,
+                        232
+                    ],
+                    [
+                        310,
+                        254
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107877,
+            "classId": 1301080,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Shoring",
+            "points": {
+                "exterior": [
+                    [
+                        196,
+                        203
+                    ],
+                    [
+                        294,
+                        232
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107876,
+            "classId": 1301080,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Shoring",
+            "points": {
+                "exterior": [
+                    [
+                        305,
+                        200
+                    ],
+                    [
+                        353,
+                        239
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503102970,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Ronok9943",
+            "createdAt": "2020-08-23T05:32:34.226Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        239,
+                        420
+                    ],
+                    [
+                        262,
+                        446
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107875,
+            "classId": 1301080,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Shoring",
+            "points": {
+                "exterior": [
+                    [
+                        592,
+                        426
+                    ],
+                    [
+                        805,
+                        465
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503102975,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Ronok9943",
+            "createdAt": "2020-08-23T05:32:36.137Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        225,
+                        425
+                    ],
+                    [
+                        245,
+                        451
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107874,
+            "classId": 1301083,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Rebars",
+            "points": {
+                "exterior": [
+                    [
+                        480,
+                        68
+                    ],
+                    [
+                        588,
+                        63
+                    ],
+                    [
+                        588,
+                        93
+                    ],
+                    [
+                        476,
+                        98
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503102986,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Ronok9943",
+            "createdAt": "2020-08-23T05:32:43.124Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        458,
+                        56
+                    ],
+                    [
+                        469,
+                        74
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107873,
+            "classId": 1301083,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Rebars",
+            "points": {
+                "exterior": [
+                    [
+                        371,
+                        452
+                    ],
+                    [
+                        396,
+                        448
+                    ],
+                    [
+                        398,
+                        452
+                    ],
+                    [
+                        399,
+                        520
+                    ],
+                    [
+                        388,
+                        525
+                    ],
+                    [
+                        380,
+                        525
+                    ],
+                    [
+                        372,
+                        521
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503102987,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Ronok9943",
+            "createdAt": "2020-08-23T05:32:45.010Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        479,
+                        132
+                    ],
+                    [
+                        493,
+                        149
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503102990,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Ronok9943",
+            "createdAt": "2020-08-23T05:32:51.123Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        895,
+                        125
+                    ],
+                    [
+                        909,
+                        157
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503102993,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Ronok9943",
+            "createdAt": "2020-08-23T05:32:54.110Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        956,
+                        36
+                    ],
+                    [
+                        967,
+                        71
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503102994,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Ronok9943",
+            "createdAt": "2020-08-23T05:32:55.965Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        936,
+                        38
+                    ],
+                    [
+                        948,
+                        67
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503103000,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Ronok9943",
+            "createdAt": "2020-08-23T05:33:05.426Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        1084,
+                        485
+                    ],
+                    [
+                        1102,
+                        505
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107868,
+            "classId": 1316567,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Precast slab",
+            "points": {
+                "exterior": [
+                    [
+                        1189,
+                        550
+                    ],
+                    [
+                        1280,
+                        539
+                    ],
+                    [
+                        1279,
+                        596
+                    ],
+                    [
+                        1224,
+                        607
+                    ],
+                    [
+                        1246,
+                        667
+                    ],
+                    [
+                        1279,
+                        664
+                    ],
+                    [
+                        1280,
+                        769
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107867,
+            "classId": 1316567,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Precast slab",
+            "points": {
+                "exterior": [
+                    [
+                        1165,
+                        187
+                    ],
+                    [
+                        1167,
+                        186
+                    ],
+                    [
+                        1201,
+                        179
+                    ],
+                    [
+                        1243,
+                        238
+                    ],
+                    [
+                        1207,
+                        247
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503103004,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Ronok9943",
+            "createdAt": "2020-08-23T05:33:13.522Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        932,
+                        904
+                    ],
+                    [
+                        951,
+                        920
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107866,
+            "classId": 1316567,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Precast slab",
+            "points": {
+                "exterior": [
+                    [
+                        1151,
+                        222
+                    ],
+                    [
+                        1176,
+                        222
+                    ],
+                    [
+                        1196,
+                        288
+                    ],
+                    [
+                        1172,
+                        288
+                    ],
+                    [
+                        1170,
+                        286
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503103018,
+            "classId": 1301082,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Ronok9943",
+            "createdAt": "2020-08-23T05:33:27.966Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Truck",
+            "points": {
+                "exterior": [
+                    [
+                        56,
+                        0
+                    ],
+                    [
+                        139,
+                        113
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107865,
+            "classId": 1316567,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Precast slab",
+            "points": {
+                "exterior": [
+                    [
+                        1199,
+                        247
+                    ],
+                    [
+                        1245,
+                        245
+                    ],
+                    [
+                        1279,
+                        314
+                    ],
+                    [
+                        1223,
+                        315
+                    ],
+                    [
+                        1198,
+                        250
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503103061,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Ronok9943",
+            "createdAt": "2020-08-23T05:33:55.405Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        1126,
+                        293
+                    ],
+                    [
+                        1142,
+                        311
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503107864,
+            "classId": 1301083,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T06:48:05.153Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Rebars",
+            "points": {
+                "exterior": [
+                    [
+                        1170,
+                        399
+                    ],
+                    [
+                        1189,
+                        389
+                    ],
+                    [
+                        1224,
+                        364
+                    ],
+                    [
+                        1243,
+                        338
+                    ],
+                    [
+                        1280,
+                        336
+                    ],
+                    [
+                        1279,
+                        543
+                    ],
+                    [
+                        1191,
+                        548
+                    ],
+                    [
+                        1150,
+                        450
+                    ],
+                    [
+                        1160,
+                        441
+                    ],
+                    [
+                        1162,
+                        433
+                    ],
+                    [
+                        1156,
+                        427
+                    ],
+                    [
+                        1161,
+                        421
+                    ],
+                    [
+                        1172,
+                        418
+                    ],
+                    [
+                        1175,
+                        410
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503134121,
+            "classId": 1301084,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T12:56:35.809Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        754,
+                        583
+                    ],
+                    [
+                        749,
+                        524
+                    ],
+                    [
+                        744,
+                        521
+                    ],
+                    [
+                        741,
+                        515
+                    ],
+                    [
+                        742,
+                        508
+                    ],
+                    [
+                        745,
+                        504
+                    ],
+                    [
+                        747,
+                        486
+                    ],
+                    [
+                        751,
+                        485
+                    ],
+                    [
+                        766,
+                        485
+                    ],
+                    [
+                        768,
+                        492
+                    ],
+                    [
+                        766,
+                        501
+                    ],
+                    [
+                        768,
+                        504
+                    ],
+                    [
+                        767,
+                        504
+                    ],
+                    [
+                        772,
+                        505
+                    ],
+                    [
+                        773,
+                        512
+                    ],
+                    [
+                        773,
+                        521
+                    ],
+                    [
+                        771,
+                        524
+                    ],
+                    [
+                        774,
+                        540
+                    ],
+                    [
+                        774,
+                        546
+                    ],
+                    [
+                        779,
+                        584
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503110621,
+            "classId": 1316567,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-23T07:54:44.519Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Precast slab",
+            "points": {
+                "exterior": [
+                    [
+                        67,
+                        99
+                    ],
+                    [
+                        63,
+                        93
+                    ],
+                    [
+                        69,
+                        74
+                    ],
+                    [
+                        63,
+                        66
+                    ],
+                    [
+                        82,
+                        13
+                    ],
+                    [
+                        123,
+                        11
+                    ],
+                    [
+                        129,
+                        21
+                    ],
+                    [
+                        109,
+                        96
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503872647,
+            "classId": 1301080,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-26T04:49:14.822Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Shoring",
+            "points": {
+                "exterior": [
+                    [
+                        946,
+                        16
+                    ],
+                    [
+                        988,
+                        143
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503911345,
+            "classId": 1301083,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-26T07:33:16.742Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Rebars",
+            "points": {
+                "exterior": [
+                    [
+                        943,
+                        196
+                    ],
+                    [
+                        998,
+                        193
+                    ],
+                    [
+                        1010,
+                        233
+                    ],
+                    [
+                        1013,
+                        255
+                    ],
+                    [
+                        1026,
+                        292
+                    ],
+                    [
+                        966,
+                        298
+                    ],
+                    [
+                        954,
+                        249
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 503911344,
+            "classId": 1316567,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-08-26T07:33:16.742Z",
+            "updatedAt": "2020-08-26T12:12:08.880Z",
+            "tags": [],
+            "classTitle": "Precast slab",
+            "points": {
+                "exterior": [
+                    [
+                        60,
+                        552
+                    ],
+                    [
+                        146,
+                        289
+                    ],
+                    [
+                        298,
+                        284
+                    ],
+                    [
+                        273,
+                        400
+                    ],
+                    [
+                        275,
+                        403
+                    ],
+                    [
+                        401,
+                        398
+                    ],
+                    [
+                        396,
+                        448
+                    ],
+                    [
+                        371,
+                        451
+                    ],
+                    [
+                        372,
+                        521
+                    ],
+                    [
+                        388,
+                        526
+                    ],
+                    [
+                        388,
+                        539
+                    ],
+                    [
+                        313,
+                        543
+                    ],
+                    [
+                        274,
+                        550
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 504003921,
+            "classId": 1316567,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Antor",
+            "createdAt": "2020-08-26T12:12:08.594Z",
+            "updatedAt": "2020-08-26T12:12:13.062Z",
+            "tags": [],
+            "classTitle": "Precast slab",
+            "points": {
+                "exterior": [
+                    [
+                        599,
+                        414
+                    ],
+                    [
+                        611,
+                        244
+                    ],
+                    [
+                        777,
+                        233
+                    ],
+                    [
+                        810,
+                        420
+                    ]
+                ],
+                "interior": []
+            }
+        }
+    ]
+}

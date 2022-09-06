@@ -1,0 +1,838 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 720,
+        "width": 1280
+    },
+    "objects": [
+        {
+            "id": 345982023,
+            "classId": 1285801,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Antor",
+            "createdAt": "2020-02-02T11:30:36.161Z",
+            "updatedAt": "2020-02-28T09:57:49.673Z",
+            "tags": [],
+            "classTitle": "Rebars",
+            "points": {
+                "exterior": [
+                    [
+                        514,
+                        304
+                    ],
+                    [
+                        533,
+                        301
+                    ],
+                    [
+                        566,
+                        319
+                    ],
+                    [
+                        540,
+                        322
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 345982022,
+            "classId": 1285801,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Antor",
+            "createdAt": "2020-02-02T11:30:36.161Z",
+            "updatedAt": "2020-02-28T09:57:49.673Z",
+            "tags": [],
+            "classTitle": "Rebars",
+            "points": {
+                "exterior": [
+                    [
+                        646,
+                        332
+                    ],
+                    [
+                        671,
+                        319
+                    ],
+                    [
+                        708,
+                        333
+                    ],
+                    [
+                        707,
+                        337
+                    ],
+                    [
+                        717,
+                        343
+                    ],
+                    [
+                        696,
+                        351
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 345982021,
+            "classId": 1285799,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Antor",
+            "createdAt": "2020-02-02T11:30:36.161Z",
+            "updatedAt": "2020-02-28T09:57:49.673Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        683,
+                        298
+                    ],
+                    [
+                        689,
+                        301
+                    ],
+                    [
+                        707,
+                        297
+                    ],
+                    [
+                        730,
+                        297
+                    ],
+                    [
+                        736,
+                        269
+                    ],
+                    [
+                        733,
+                        261
+                    ],
+                    [
+                        725,
+                        258
+                    ],
+                    [
+                        684,
+                        267
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 345982012,
+            "classId": 1285799,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Antor",
+            "createdAt": "2020-02-02T11:30:36.161Z",
+            "updatedAt": "2020-02-28T09:57:49.673Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        1023,
+                        354
+                    ],
+                    [
+                        1043,
+                        351
+                    ],
+                    [
+                        1070,
+                        351
+                    ],
+                    [
+                        1124,
+                        319
+                    ],
+                    [
+                        1128,
+                        288
+                    ],
+                    [
+                        1128,
+                        275
+                    ],
+                    [
+                        1087,
+                        268
+                    ],
+                    [
+                        1034,
+                        284
+                    ],
+                    [
+                        1035,
+                        303
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 345982009,
+            "classId": 1285806,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Antor",
+            "createdAt": "2020-02-02T11:30:36.161Z",
+            "updatedAt": "2020-02-28T09:57:49.673Z",
+            "tags": [],
+            "classTitle": "Excavator",
+            "points": {
+                "exterior": [
+                    [
+                        477,
+                        168
+                    ],
+                    [
+                        511,
+                        203
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 345982008,
+            "classId": 1285809,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Antor",
+            "createdAt": "2020-02-02T11:30:36.161Z",
+            "updatedAt": "2020-02-28T09:57:49.673Z",
+            "tags": [],
+            "classTitle": "Mixer_truck",
+            "points": {
+                "exterior": [
+                    [
+                        406,
+                        186
+                    ],
+                    [
+                        473,
+                        215
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 345982007,
+            "classId": 1285806,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Antor",
+            "createdAt": "2020-02-02T11:30:36.161Z",
+            "updatedAt": "2020-02-28T09:57:49.673Z",
+            "tags": [],
+            "classTitle": "Excavator",
+            "points": {
+                "exterior": [
+                    [
+                        129,
+                        217
+                    ],
+                    [
+                        190,
+                        244
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 345982118,
+            "classId": 1285806,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Antor",
+            "createdAt": "2020-02-02T11:31:17.239Z",
+            "updatedAt": "2020-02-28T09:57:49.673Z",
+            "tags": [],
+            "classTitle": "Excavator",
+            "points": {
+                "exterior": [
+                    [
+                        515,
+                        151
+                    ],
+                    [
+                        555,
+                        188
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 345982155,
+            "classId": 1285811,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Antor",
+            "createdAt": "2020-02-02T11:31:56.437Z",
+            "updatedAt": "2020-02-28T09:57:49.673Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        728,
+                        287
+                    ],
+                    [
+                        736,
+                        301
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 345982158,
+            "classId": 1285811,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Antor",
+            "createdAt": "2020-02-02T11:32:04.174Z",
+            "updatedAt": "2020-02-28T09:57:49.673Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        657,
+                        271
+                    ],
+                    [
+                        664,
+                        291
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 345982242,
+            "classId": 1285813,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Antor",
+            "createdAt": "2020-02-02T11:32:37.949Z",
+            "updatedAt": "2020-02-28T09:57:49.673Z",
+            "tags": [],
+            "classTitle": "Truck",
+            "points": {
+                "exterior": [
+                    [
+                        994,
+                        549
+                    ],
+                    [
+                        1280,
+                        678
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 345982245,
+            "classId": 1285811,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Antor",
+            "createdAt": "2020-02-02T11:32:42.215Z",
+            "updatedAt": "2020-02-28T09:57:49.673Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        1049,
+                        511
+                    ],
+                    [
+                        1068,
+                        548
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 345982249,
+            "classId": 1285806,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Antor",
+            "createdAt": "2020-02-02T11:32:49.518Z",
+            "updatedAt": "2020-02-28T09:57:49.673Z",
+            "tags": [],
+            "classTitle": "Excavator",
+            "points": {
+                "exterior": [
+                    [
+                        1076,
+                        438
+                    ],
+                    [
+                        1208,
+                        562
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 345982474,
+            "classId": 1285811,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Antor",
+            "createdAt": "2020-02-02T11:35:24.360Z",
+            "updatedAt": "2020-02-28T09:57:49.673Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        1036,
+                        655
+                    ],
+                    [
+                        1056,
+                        706
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 345982477,
+            "classId": 1285811,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Antor",
+            "createdAt": "2020-02-02T11:35:26.569Z",
+            "updatedAt": "2020-02-28T09:57:49.673Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        1064,
+                        647
+                    ],
+                    [
+                        1089,
+                        701
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 345982645,
+            "classId": 1285811,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Antor",
+            "createdAt": "2020-02-02T11:36:28.155Z",
+            "updatedAt": "2020-02-28T09:57:49.673Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        326,
+                        370
+                    ],
+                    [
+                        337,
+                        390
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 362763159,
+            "classId": 1285799,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-02-28T09:51:50.287Z",
+            "updatedAt": "2020-02-28T09:57:49.673Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        1130,
+                        375
+                    ],
+                    [
+                        1151,
+                        351
+                    ],
+                    [
+                        1173,
+                        360
+                    ],
+                    [
+                        1190,
+                        365
+                    ],
+                    [
+                        1190,
+                        378
+                    ],
+                    [
+                        1169,
+                        388
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 362763182,
+            "classId": 1285799,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-02-28T09:52:20.297Z",
+            "updatedAt": "2020-02-28T09:57:49.673Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        871,
+                        465
+                    ],
+                    [
+                        872,
+                        443
+                    ],
+                    [
+                        890,
+                        420
+                    ],
+                    [
+                        932,
+                        431
+                    ],
+                    [
+                        929,
+                        447
+                    ],
+                    [
+                        921,
+                        464
+                    ],
+                    [
+                        903,
+                        481
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 362763181,
+            "classId": 1285799,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-02-28T09:52:20.297Z",
+            "updatedAt": "2020-02-28T09:57:49.673Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        886,
+                        339
+                    ],
+                    [
+                        886,
+                        314
+                    ],
+                    [
+                        943,
+                        307
+                    ],
+                    [
+                        939,
+                        337
+                    ],
+                    [
+                        918,
+                        343
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 362763180,
+            "classId": 1285799,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-02-28T09:52:20.297Z",
+            "updatedAt": "2020-02-28T09:57:49.673Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        751,
+                        312
+                    ],
+                    [
+                        773,
+                        305
+                    ],
+                    [
+                        776,
+                        301
+                    ],
+                    [
+                        789,
+                        307
+                    ],
+                    [
+                        790,
+                        315
+                    ],
+                    [
+                        767,
+                        318
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 362763178,
+            "classId": 1285799,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-02-28T09:52:20.297Z",
+            "updatedAt": "2020-02-28T09:57:49.673Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        687,
+                        317
+                    ],
+                    [
+                        684,
+                        310
+                    ],
+                    [
+                        696,
+                        306
+                    ],
+                    [
+                        696,
+                        299
+                    ],
+                    [
+                        712,
+                        297
+                    ],
+                    [
+                        721,
+                        306
+                    ],
+                    [
+                        714,
+                        314
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 362763177,
+            "classId": 1285799,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-02-28T09:52:20.297Z",
+            "updatedAt": "2020-02-28T09:57:49.673Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        650,
+                        327
+                    ],
+                    [
+                        639,
+                        318
+                    ],
+                    [
+                        661,
+                        312
+                    ],
+                    [
+                        662,
+                        304
+                    ],
+                    [
+                        683,
+                        311
+                    ],
+                    [
+                        679,
+                        320
+                    ],
+                    [
+                        670,
+                        319
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 362763176,
+            "classId": 1285799,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-02-28T09:52:20.297Z",
+            "updatedAt": "2020-02-28T09:57:49.673Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        212,
+                        373
+                    ],
+                    [
+                        197,
+                        363
+                    ],
+                    [
+                        194,
+                        336
+                    ],
+                    [
+                        231,
+                        330
+                    ],
+                    [
+                        242,
+                        336
+                    ],
+                    [
+                        250,
+                        365
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 362763219,
+            "classId": 1285799,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-02-28T09:53:36.240Z",
+            "updatedAt": "2020-02-28T09:57:49.673Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        736,
+                        305
+                    ],
+                    [
+                        749,
+                        300
+                    ],
+                    [
+                        756,
+                        292
+                    ],
+                    [
+                        767,
+                        292
+                    ],
+                    [
+                        769,
+                        305
+                    ],
+                    [
+                        743,
+                        310
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 362763396,
+            "classId": 1285799,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Raziajuthy",
+            "createdAt": "2020-02-28T09:57:49.378Z",
+            "updatedAt": "2020-02-28T09:57:52.977Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        881,
+                        366
+                    ],
+                    [
+                        875,
+                        355
+                    ],
+                    [
+                        883,
+                        349
+                    ],
+                    [
+                        923,
+                        361
+                    ],
+                    [
+                        927,
+                        373
+                    ],
+                    [
+                        904,
+                        376
+                    ]
+                ],
+                "interior": []
+            }
+        }
+    ]
+}

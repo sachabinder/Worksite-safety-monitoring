@@ -1,0 +1,434 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 1024,
+        "width": 1280
+    },
+    "objects": [
+        {
+            "id": 356081382,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "safayat",
+            "createdAt": "2020-02-22T11:09:41.174Z",
+            "updatedAt": "2020-02-22T11:11:59.473Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        1049,
+                        650
+                    ],
+                    [
+                        1090,
+                        709
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 356081408,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "safayat",
+            "createdAt": "2020-02-22T11:09:46.037Z",
+            "updatedAt": "2020-02-22T11:11:59.473Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        1018,
+                        352
+                    ],
+                    [
+                        1042,
+                        425
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 356081410,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "safayat",
+            "createdAt": "2020-02-22T11:09:52.534Z",
+            "updatedAt": "2020-02-22T11:11:59.473Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        920,
+                        340
+                    ],
+                    [
+                        939,
+                        387
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 356081417,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "safayat",
+            "createdAt": "2020-02-22T11:10:00.768Z",
+            "updatedAt": "2020-02-22T11:11:59.473Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        2,
+                        306
+                    ],
+                    [
+                        40,
+                        375
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 356081419,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "safayat",
+            "createdAt": "2020-02-22T11:10:03.182Z",
+            "updatedAt": "2020-02-22T11:11:59.473Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        186,
+                        381
+                    ],
+                    [
+                        214,
+                        456
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 356081422,
+            "classId": 1301084,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "safayat",
+            "createdAt": "2020-02-22T11:10:10.083Z",
+            "updatedAt": "2020-02-22T11:11:59.473Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        909,
+                        1023
+                    ],
+                    [
+                        904,
+                        933
+                    ],
+                    [
+                        911,
+                        837
+                    ],
+                    [
+                        972,
+                        852
+                    ],
+                    [
+                        1005,
+                        885
+                    ],
+                    [
+                        1036,
+                        1024
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 356081427,
+            "classId": 1301084,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "safayat",
+            "createdAt": "2020-02-22T11:10:19.710Z",
+            "updatedAt": "2020-02-22T11:11:59.473Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        1039,
+                        1024
+                    ],
+                    [
+                        1009,
+                        893
+                    ],
+                    [
+                        1011,
+                        888
+                    ],
+                    [
+                        1055,
+                        862
+                    ],
+                    [
+                        1118,
+                        861
+                    ],
+                    [
+                        1150,
+                        958
+                    ],
+                    [
+                        1160,
+                        1024
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 356081435,
+            "classId": 1301084,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "safayat",
+            "createdAt": "2020-02-22T11:10:34.441Z",
+            "updatedAt": "2020-02-22T11:11:59.473Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        763,
+                        311
+                    ],
+                    [
+                        756,
+                        270
+                    ],
+                    [
+                        760,
+                        246
+                    ],
+                    [
+                        764,
+                        218
+                    ],
+                    [
+                        1157,
+                        273
+                    ],
+                    [
+                        1173,
+                        271
+                    ],
+                    [
+                        1177,
+                        274
+                    ],
+                    [
+                        1170,
+                        307
+                    ],
+                    [
+                        1179,
+                        308
+                    ],
+                    [
+                        1166,
+                        403
+                    ],
+                    [
+                        1150,
+                        415
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 356081447,
+            "classId": 1301084,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "safayat",
+            "createdAt": "2020-02-22T11:10:58.825Z",
+            "updatedAt": "2020-02-22T11:11:59.473Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        793,
+                        222
+                    ],
+                    [
+                        795,
+                        212
+                    ],
+                    [
+                        808,
+                        211
+                    ],
+                    [
+                        1199,
+                        266
+                    ],
+                    [
+                        1204,
+                        269
+                    ],
+                    [
+                        1196,
+                        333
+                    ],
+                    [
+                        1181,
+                        336
+                    ],
+                    [
+                        1174,
+                        391
+                    ],
+                    [
+                        1169,
+                        391
+                    ],
+                    [
+                        1181,
+                        309
+                    ],
+                    [
+                        1171,
+                        307
+                    ],
+                    [
+                        1177,
+                        274
+                    ],
+                    [
+                        1174,
+                        271
+                    ],
+                    [
+                        1157,
+                        273
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 356081469,
+            "classId": 1301084,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "safayat",
+            "createdAt": "2020-02-22T11:11:43.218Z",
+            "updatedAt": "2020-02-22T11:11:59.473Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        100,
+                        658
+                    ],
+                    [
+                        63,
+                        466
+                    ],
+                    [
+                        0,
+                        328
+                    ],
+                    [
+                        0,
+                        302
+                    ],
+                    [
+                        40,
+                        293
+                    ],
+                    [
+                        134,
+                        422
+                    ],
+                    [
+                        176,
+                        631
+                    ],
+                    [
+                        158,
+                        640
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 356081478,
+            "classId": 1301084,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "safayat",
+            "createdAt": "2020-02-22T11:11:59.211Z",
+            "updatedAt": "2020-02-22T11:12:08.094Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        95,
+                        668
+                    ],
+                    [
+                        52,
+                        466
+                    ],
+                    [
+                        0,
+                        342
+                    ],
+                    [
+                        1,
+                        614
+                    ],
+                    [
+                        14,
+                        666
+                    ],
+                    [
+                        35,
+                        677
+                    ]
+                ],
+                "interior": []
+            }
+        }
+    ]
+}

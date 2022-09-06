@@ -1,0 +1,318 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 720,
+        "width": 1280
+    },
+    "objects": [
+        {
+            "id": 346458160,
+            "classId": 1285799,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Bijoy",
+            "createdAt": "2020-02-03T11:16:41.529Z",
+            "updatedAt": "2020-02-28T09:04:22.068Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        1109,
+                        313
+                    ],
+                    [
+                        1107,
+                        337
+                    ],
+                    [
+                        1140,
+                        343
+                    ],
+                    [
+                        1132,
+                        431
+                    ],
+                    [
+                        1201,
+                        443
+                    ],
+                    [
+                        1216,
+                        322
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346458158,
+            "classId": 1285801,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Bijoy",
+            "createdAt": "2020-02-03T11:16:41.529Z",
+            "updatedAt": "2020-02-28T09:04:22.068Z",
+            "tags": [],
+            "classTitle": "Rebars",
+            "points": {
+                "exterior": [
+                    [
+                        561,
+                        412
+                    ],
+                    [
+                        635,
+                        427
+                    ],
+                    [
+                        696,
+                        437
+                    ],
+                    [
+                        785,
+                        452
+                    ],
+                    [
+                        628,
+                        632
+                    ],
+                    [
+                        324,
+                        562
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346458154,
+            "classId": 1285801,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Bijoy",
+            "createdAt": "2020-02-03T11:16:41.529Z",
+            "updatedAt": "2020-02-28T09:04:22.068Z",
+            "tags": [],
+            "classTitle": "Rebars",
+            "points": {
+                "exterior": [
+                    [
+                        320,
+                        562
+                    ],
+                    [
+                        626,
+                        633
+                    ],
+                    [
+                        565,
+                        720
+                    ],
+                    [
+                        467,
+                        720
+                    ],
+                    [
+                        397,
+                        699
+                    ],
+                    [
+                        385,
+                        707
+                    ],
+                    [
+                        194,
+                        650
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346458153,
+            "classId": 1285801,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Bijoy",
+            "createdAt": "2020-02-03T11:16:41.529Z",
+            "updatedAt": "2020-02-28T09:04:22.068Z",
+            "tags": [],
+            "classTitle": "Rebars",
+            "points": {
+                "exterior": [
+                    [
+                        910,
+                        585
+                    ],
+                    [
+                        1266,
+                        632
+                    ],
+                    [
+                        1280,
+                        720
+                    ],
+                    [
+                        862,
+                        719
+                    ],
+                    [
+                        896,
+                        604
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346458152,
+            "classId": 1285806,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Bijoy",
+            "createdAt": "2020-02-03T11:16:41.529Z",
+            "updatedAt": "2020-02-28T09:04:32.634Z",
+            "tags": [],
+            "classTitle": "Excavator",
+            "points": {
+                "exterior": [
+                    [
+                        462,
+                        201
+                    ],
+                    [
+                        545,
+                        244
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346458369,
+            "classId": 1285799,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Bijoy",
+            "createdAt": "2020-02-03T11:18:26.237Z",
+            "updatedAt": "2020-02-28T09:04:22.068Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        999,
+                        294
+                    ],
+                    [
+                        981,
+                        302
+                    ],
+                    [
+                        973,
+                        416
+                    ],
+                    [
+                        1044,
+                        424
+                    ],
+                    [
+                        1058,
+                        293
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346458564,
+            "classId": 1285801,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Bijoy",
+            "createdAt": "2020-02-03T11:21:01.146Z",
+            "updatedAt": "2020-02-28T09:04:22.068Z",
+            "tags": [],
+            "classTitle": "Rebars",
+            "points": {
+                "exterior": [
+                    [
+                        605,
+                        667
+                    ],
+                    [
+                        706,
+                        682
+                    ],
+                    [
+                        682,
+                        719
+                    ],
+                    [
+                        570,
+                        719
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346458574,
+            "classId": 1285801,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Bijoy",
+            "createdAt": "2020-02-03T11:21:12.251Z",
+            "updatedAt": "2020-02-28T09:04:22.068Z",
+            "tags": [],
+            "classTitle": "Rebars",
+            "points": {
+                "exterior": [
+                    [
+                        736,
+                        690
+                    ],
+                    [
+                        857,
+                        713
+                    ],
+                    [
+                        857,
+                        720
+                    ],
+                    [
+                        718,
+                        720
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 362757393,
+            "classId": 1285806,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "safayat",
+            "createdAt": "2020-02-28T09:04:21.731Z",
+            "updatedAt": "2020-02-28T09:04:21.731Z",
+            "tags": [],
+            "classTitle": "Excavator",
+            "points": {
+                "exterior": [
+                    [
+                        448,
+                        177
+                    ],
+                    [
+                        474,
+                        202
+                    ]
+                ],
+                "interior": []
+            }
+        }
+    ]
+}

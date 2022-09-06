@@ -1,0 +1,722 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 1080,
+        "width": 1920
+    },
+    "objects": [
+        {
+            "id": 346331882,
+            "classId": 1285801,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:51:50.374Z",
+            "updatedAt": "2020-03-04T05:26:30.103Z",
+            "tags": [],
+            "classTitle": "Rebars",
+            "points": {
+                "exterior": [
+                    [
+                        434,
+                        807
+                    ],
+                    [
+                        477,
+                        759
+                    ],
+                    [
+                        512,
+                        764
+                    ],
+                    [
+                        476,
+                        813
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346331911,
+            "classId": 1285811,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:52:03.032Z",
+            "updatedAt": "2020-03-04T05:26:30.103Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        432,
+                        761
+                    ],
+                    [
+                        439,
+                        787
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346331913,
+            "classId": 1285811,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:52:05.162Z",
+            "updatedAt": "2020-03-04T05:26:30.103Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        388,
+                        698
+                    ],
+                    [
+                        400,
+                        718
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346331917,
+            "classId": 1285811,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:52:08.456Z",
+            "updatedAt": "2020-03-04T05:26:30.103Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        690,
+                        697
+                    ],
+                    [
+                        699,
+                        720
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346331983,
+            "classId": 1285799,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:52:41.670Z",
+            "updatedAt": "2020-03-04T05:26:30.103Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        593,
+                        892
+                    ],
+                    [
+                        593,
+                        862
+                    ],
+                    [
+                        585,
+                        858
+                    ],
+                    [
+                        586,
+                        825
+                    ],
+                    [
+                        597,
+                        815
+                    ],
+                    [
+                        635,
+                        819
+                    ],
+                    [
+                        640,
+                        851
+                    ],
+                    [
+                        645,
+                        889
+                    ],
+                    [
+                        634,
+                        891
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346332057,
+            "classId": 1285799,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:52:53.847Z",
+            "updatedAt": "2020-03-04T05:26:30.103Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        648,
+                        908
+                    ],
+                    [
+                        643,
+                        869
+                    ],
+                    [
+                        659,
+                        847
+                    ],
+                    [
+                        701,
+                        848
+                    ],
+                    [
+                        703,
+                        867
+                    ],
+                    [
+                        698,
+                        875
+                    ],
+                    [
+                        698,
+                        913
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346332237,
+            "classId": 1285811,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:54:11.029Z",
+            "updatedAt": "2020-03-04T05:26:30.103Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        535,
+                        712
+                    ],
+                    [
+                        552,
+                        739
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346332269,
+            "classId": 1285811,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:54:24.168Z",
+            "updatedAt": "2020-03-04T05:26:30.103Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        570,
+                        725
+                    ],
+                    [
+                        580,
+                        746
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346332275,
+            "classId": 1285811,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:54:26.063Z",
+            "updatedAt": "2020-03-04T05:26:30.103Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        556,
+                        732
+                    ],
+                    [
+                        567,
+                        760
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346332301,
+            "classId": 1285801,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:54:38.634Z",
+            "updatedAt": "2020-03-04T05:26:30.103Z",
+            "tags": [],
+            "classTitle": "Rebars",
+            "points": {
+                "exterior": [
+                    [
+                        411,
+                        712
+                    ],
+                    [
+                        496,
+                        710
+                    ],
+                    [
+                        501,
+                        702
+                    ],
+                    [
+                        541,
+                        704
+                    ],
+                    [
+                        545,
+                        692
+                    ],
+                    [
+                        423,
+                        694
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346332344,
+            "classId": 1285806,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:54:58.230Z",
+            "updatedAt": "2020-03-04T05:26:30.103Z",
+            "tags": [],
+            "classTitle": "Excavator",
+            "points": {
+                "exterior": [
+                    [
+                        1101,
+                        848
+                    ],
+                    [
+                        1146,
+                        925
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346332355,
+            "classId": 1285811,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:55:02.703Z",
+            "updatedAt": "2020-03-04T05:26:30.103Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        1147,
+                        912
+                    ],
+                    [
+                        1161,
+                        953
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346332380,
+            "classId": 1285806,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:55:10.267Z",
+            "updatedAt": "2020-03-04T05:26:30.103Z",
+            "tags": [],
+            "classTitle": "Excavator",
+            "points": {
+                "exterior": [
+                    [
+                        1503,
+                        823
+                    ],
+                    [
+                        1676,
+                        907
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346332400,
+            "classId": 1285806,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:55:19.768Z",
+            "updatedAt": "2020-03-04T05:26:30.103Z",
+            "tags": [],
+            "classTitle": "Excavator",
+            "points": {
+                "exterior": [
+                    [
+                        1321,
+                        599
+                    ],
+                    [
+                        1440,
+                        689
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346332408,
+            "classId": 1285806,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:55:23.061Z",
+            "updatedAt": "2020-03-04T05:26:30.103Z",
+            "tags": [],
+            "classTitle": "Excavator",
+            "points": {
+                "exterior": [
+                    [
+                        1388,
+                        464
+                    ],
+                    [
+                        1494,
+                        553
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346332483,
+            "classId": 1285811,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:55:36.949Z",
+            "updatedAt": "2020-03-04T05:26:30.103Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        1598,
+                        684
+                    ],
+                    [
+                        1608,
+                        702
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346332572,
+            "classId": 1285801,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:55:52.240Z",
+            "updatedAt": "2020-03-04T05:26:30.103Z",
+            "tags": [],
+            "classTitle": "Rebars",
+            "points": {
+                "exterior": [
+                    [
+                        1208,
+                        589
+                    ],
+                    [
+                        1192,
+                        587
+                    ],
+                    [
+                        1196,
+                        574
+                    ],
+                    [
+                        1228,
+                        553
+                    ],
+                    [
+                        1236,
+                        556
+                    ],
+                    [
+                        1238,
+                        563
+                    ],
+                    [
+                        1239,
+                        566
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346332712,
+            "classId": 1285811,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:56:12.686Z",
+            "updatedAt": "2020-03-04T05:26:30.103Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        962,
+                        638
+                    ],
+                    [
+                        973,
+                        660
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346332725,
+            "classId": 1285811,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:56:22.061Z",
+            "updatedAt": "2020-03-04T05:26:30.103Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        956,
+                        874
+                    ],
+                    [
+                        967,
+                        890
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346332730,
+            "classId": 1285811,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:56:25.031Z",
+            "updatedAt": "2020-03-04T05:26:30.103Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        962,
+                        888
+                    ],
+                    [
+                        976,
+                        906
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 352564449,
+            "classId": 1285799,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "monib",
+            "createdAt": "2020-02-17T12:51:57.742Z",
+            "updatedAt": "2020-03-04T05:26:30.103Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        532,
+                        867
+                    ],
+                    [
+                        527,
+                        830
+                    ],
+                    [
+                        473,
+                        824
+                    ],
+                    [
+                        464,
+                        831
+                    ],
+                    [
+                        462,
+                        854
+                    ],
+                    [
+                        470,
+                        857
+                    ],
+                    [
+                        472,
+                        886
+                    ],
+                    [
+                        519,
+                        891
+                    ],
+                    [
+                        526,
+                        880
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 352564448,
+            "classId": 1285799,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "monib",
+            "createdAt": "2020-02-17T12:51:57.742Z",
+            "updatedAt": "2020-03-04T05:26:30.103Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        533,
+                        865
+                    ],
+                    [
+                        527,
+                        830
+                    ],
+                    [
+                        492,
+                        824
+                    ],
+                    [
+                        493,
+                        807
+                    ],
+                    [
+                        513,
+                        797
+                    ],
+                    [
+                        552,
+                        803
+                    ],
+                    [
+                        555,
+                        856
+                    ],
+                    [
+                        550,
+                        857
+                    ],
+                    [
+                        549,
+                        864
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 367631980,
+            "classId": 1285801,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "rabid",
+            "createdAt": "2020-03-04T05:26:29.712Z",
+            "updatedAt": "2020-03-04T05:26:33.485Z",
+            "tags": [],
+            "classTitle": "Rebars",
+            "points": {
+                "exterior": [
+                    [
+                        1261,
+                        543
+                    ],
+                    [
+                        1242,
+                        555
+                    ],
+                    [
+                        1242,
+                        564
+                    ],
+                    [
+                        1269,
+                        564
+                    ],
+                    [
+                        1287,
+                        547
+                    ]
+                ],
+                "interior": []
+            }
+        }
+    ]
+}

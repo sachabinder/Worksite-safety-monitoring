@@ -1,0 +1,322 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 1080,
+        "width": 1920
+    },
+    "objects": [
+        {
+            "id": 346329053,
+            "classId": 1285809,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:32:56.357Z",
+            "updatedAt": "2020-02-03T05:36:14.914Z",
+            "tags": [],
+            "classTitle": "Mixer_truck",
+            "points": {
+                "exterior": [
+                    [
+                        83,
+                        832
+                    ],
+                    [
+                        294,
+                        947
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346329064,
+            "classId": 1285811,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:33:02.151Z",
+            "updatedAt": "2020-02-03T05:36:14.914Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        412,
+                        864
+                    ],
+                    [
+                        426,
+                        899
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346329079,
+            "classId": 1285806,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:33:10.426Z",
+            "updatedAt": "2020-02-03T05:36:14.914Z",
+            "tags": [],
+            "classTitle": "Excavator",
+            "points": {
+                "exterior": [
+                    [
+                        469,
+                        706
+                    ],
+                    [
+                        540,
+                        759
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346329087,
+            "classId": 1285806,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:33:16.168Z",
+            "updatedAt": "2020-02-03T05:36:14.914Z",
+            "tags": [],
+            "classTitle": "Excavator",
+            "points": {
+                "exterior": [
+                    [
+                        598,
+                        797
+                    ],
+                    [
+                        705,
+                        843
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346329333,
+            "classId": 1285806,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:34:34.012Z",
+            "updatedAt": "2020-02-03T05:36:14.914Z",
+            "tags": [],
+            "classTitle": "Excavator",
+            "points": {
+                "exterior": [
+                    [
+                        987,
+                        809
+                    ],
+                    [
+                        1078,
+                        865
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346329411,
+            "classId": 1285806,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:34:59.758Z",
+            "updatedAt": "2020-02-03T05:36:14.914Z",
+            "tags": [],
+            "classTitle": "Excavator",
+            "points": {
+                "exterior": [
+                    [
+                        1120,
+                        712
+                    ],
+                    [
+                        1226,
+                        851
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346329433,
+            "classId": 1285806,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:35:11.003Z",
+            "updatedAt": "2020-02-03T05:36:14.914Z",
+            "tags": [],
+            "classTitle": "Excavator",
+            "points": {
+                "exterior": [
+                    [
+                        1272,
+                        833
+                    ],
+                    [
+                        1473,
+                        934
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346329437,
+            "classId": 1285811,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:35:15.449Z",
+            "updatedAt": "2020-02-03T05:36:14.914Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        1217,
+                        909
+                    ],
+                    [
+                        1231,
+                        949
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346329465,
+            "classId": 1285811,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:35:22.957Z",
+            "updatedAt": "2020-02-03T05:36:14.914Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        1746,
+                        874
+                    ],
+                    [
+                        1762,
+                        896
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346329470,
+            "classId": 1285811,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:35:26.465Z",
+            "updatedAt": "2020-02-03T05:36:14.914Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        1588,
+                        741
+                    ],
+                    [
+                        1596,
+                        767
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346329494,
+            "classId": 1285806,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:35:39.835Z",
+            "updatedAt": "2020-02-03T05:36:14.914Z",
+            "tags": [],
+            "classTitle": "Excavator",
+            "points": {
+                "exterior": [
+                    [
+                        1349,
+                        484
+                    ],
+                    [
+                        1412,
+                        602
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346329500,
+            "classId": 1285813,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:35:45.500Z",
+            "updatedAt": "2020-02-03T05:36:14.914Z",
+            "tags": [],
+            "classTitle": "Truck",
+            "points": {
+                "exterior": [
+                    [
+                        1390,
+                        521
+                    ],
+                    [
+                        1454,
+                        578
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 346329546,
+            "classId": 1285811,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "dipto",
+            "createdAt": "2020-02-03T05:36:14.645Z",
+            "updatedAt": "2020-02-03T05:36:14.645Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        626,
+                        851
+                    ],
+                    [
+                        638,
+                        882
+                    ]
+                ],
+                "interior": []
+            }
+        }
+    ]
+}

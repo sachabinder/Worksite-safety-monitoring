@@ -1,0 +1,394 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 1024,
+        "width": 1280
+    },
+    "objects": [
+        {
+            "id": 502638257,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Bipasha",
+            "createdAt": "2020-08-20T04:13:11.128Z",
+            "updatedAt": "2020-08-28T06:45:10.270Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        251,
+                        140
+                    ],
+                    [
+                        265,
+                        163
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 502638258,
+            "classId": 1301078,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Bipasha",
+            "createdAt": "2020-08-20T04:13:14.192Z",
+            "updatedAt": "2020-08-28T06:45:10.270Z",
+            "tags": [],
+            "classTitle": "People",
+            "points": {
+                "exterior": [
+                    [
+                        239,
+                        140
+                    ],
+                    [
+                        248,
+                        167
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 502638265,
+            "classId": 1301075,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "Bipasha",
+            "createdAt": "2020-08-20T04:13:24.800Z",
+            "updatedAt": "2020-08-28T06:45:10.270Z",
+            "tags": [],
+            "classTitle": "Excavator",
+            "points": {
+                "exterior": [
+                    [
+                        546,
+                        92
+                    ],
+                    [
+                        763,
+                        257
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 502646312,
+            "classId": 1301083,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "mdarif",
+            "createdAt": "2020-08-20T06:05:48.387Z",
+            "updatedAt": "2020-08-28T06:45:10.270Z",
+            "tags": [],
+            "classTitle": "Rebars",
+            "points": {
+                "exterior": [
+                    [
+                        794,
+                        806
+                    ],
+                    [
+                        806,
+                        803
+                    ],
+                    [
+                        813,
+                        794
+                    ],
+                    [
+                        815,
+                        789
+                    ],
+                    [
+                        816,
+                        780
+                    ],
+                    [
+                        806,
+                        741
+                    ],
+                    [
+                        799,
+                        741
+                    ],
+                    [
+                        796,
+                        737
+                    ],
+                    [
+                        780,
+                        739
+                    ],
+                    [
+                        776,
+                        722
+                    ],
+                    [
+                        765,
+                        723
+                    ],
+                    [
+                        766,
+                        733
+                    ],
+                    [
+                        758,
+                        734
+                    ],
+                    [
+                        759,
+                        741
+                    ],
+                    [
+                        638,
+                        757
+                    ],
+                    [
+                        637,
+                        746
+                    ],
+                    [
+                        627,
+                        746
+                    ],
+                    [
+                        626,
+                        759
+                    ],
+                    [
+                        591,
+                        763
+                    ],
+                    [
+                        595,
+                        811
+                    ],
+                    [
+                        608,
+                        811
+                    ],
+                    [
+                        611,
+                        834
+                    ],
+                    [
+                        547,
+                        842
+                    ],
+                    [
+                        546,
+                        767
+                    ],
+                    [
+                        549,
+                        724
+                    ],
+                    [
+                        827,
+                        699
+                    ],
+                    [
+                        851,
+                        812
+                    ],
+                    [
+                        796,
+                        816
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 502646311,
+            "classId": 1301083,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "mdarif",
+            "createdAt": "2020-08-20T06:05:48.387Z",
+            "updatedAt": "2020-08-28T06:45:10.270Z",
+            "tags": [],
+            "classTitle": "Rebars",
+            "points": {
+                "exterior": [
+                    [
+                        652,
+                        827
+                    ],
+                    [
+                        773,
+                        808
+                    ],
+                    [
+                        777,
+                        818
+                    ],
+                    [
+                        691,
+                        827
+                    ],
+                    [
+                        651,
+                        832
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 502931115,
+            "classId": 1301084,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Antor",
+            "createdAt": "2020-08-21T08:59:13.333Z",
+            "updatedAt": "2020-08-28T06:45:10.270Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        641,
+                        953
+                    ],
+                    [
+                        633,
+                        876
+                    ],
+                    [
+                        678,
+                        863
+                    ],
+                    [
+                        752,
+                        846
+                    ],
+                    [
+                        764,
+                        846
+                    ],
+                    [
+                        785,
+                        921
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 502931114,
+            "classId": 1301084,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Antor",
+            "createdAt": "2020-08-21T08:59:13.333Z",
+            "updatedAt": "2020-08-28T06:45:10.270Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        880,
+                        746
+                    ],
+                    [
+                        852,
+                        614
+                    ],
+                    [
+                        911,
+                        609
+                    ],
+                    [
+                        949,
+                        737
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 502931113,
+            "classId": 1301084,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "Antor",
+            "createdAt": "2020-08-21T08:59:13.333Z",
+            "updatedAt": "2020-08-28T06:45:10.270Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        918,
+                        613
+                    ],
+                    [
+                        963,
+                        733
+                    ],
+                    [
+                        1033,
+                        714
+                    ],
+                    [
+                        983,
+                        601
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 504940529,
+            "classId": 1301084,
+            "description": "",
+            "geometryType": "polygon",
+            "labelerLogin": "mdarif",
+            "createdAt": "2020-08-28T06:45:10.270Z",
+            "updatedAt": "2020-08-28T06:45:10.270Z",
+            "tags": [],
+            "classTitle": "Vertical_formwork",
+            "points": {
+                "exterior": [
+                    [
+                        708,
+                        361
+                    ],
+                    [
+                        689,
+                        344
+                    ],
+                    [
+                        688,
+                        296
+                    ],
+                    [
+                        728,
+                        290
+                    ],
+                    [
+                        794,
+                        289
+                    ],
+                    [
+                        804,
+                        329
+                    ],
+                    [
+                        801,
+                        354
+                    ]
+                ],
+                "interior": []
+            }
+        }
+    ]
+}
