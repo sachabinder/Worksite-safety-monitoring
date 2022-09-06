@@ -138,19 +138,28 @@ def object_detection_api(
     boxes, pred_cls = get_prediction(img_path, threshold)  # Get predictions
     img = cv2.imread(img_path)  # Read image with cv2
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  # Convert to RGB
+    print(img.shape)
+    print()
     for i in range(len(boxes)):
-        cv2.rectangle(
-            img, boxes[i][0], boxes[i][1], color=(0, 255, 0), thickness=rect_th
-        )  # Draw Rectangle with the coordinates
+        pt1 = (int(boxes[i][0][0]), int(boxes[i][0][1]))
+        pt2 = (int(boxes[i][1][0]), int(boxes[i][1][1]))
+        cv2.rectangle(img=img,
+                      pt1=pt1, 
+                      pt2=pt2, 
+                      color=(0, 255, 0),
+                      thickness=rect_th
+                     )  # Draw Rectangle with the coordinates
         cv2.putText(
             img,
             pred_cls[i],
-            boxes[i][0],
+            pt1,
             cv2.FONT_HERSHEY_SIMPLEX,
             text_size,
             (0, 255, 0),
             thickness=text_th,
         )  # Write the prediction class
+    plt.figure(figsize=(20, 30))  # display the output image
+
     plt.figure(figsize=(20, 30))  # display the output image
     plt.imshow(img)
     plt.xticks([])
@@ -161,7 +170,7 @@ def object_detection_api(
 # %%
 # Try the detection model for the image of your choice
 # Example to help, if I have a folder named data with a jpeg format picture called test, the result would be:
-object_detection_api("data/test.jpeg")
+object_detection_api("Detection_Test_Set/Detection_Test_Set_Img/2019-10-17-13-30-11.jpg")
 
 
 # %%
