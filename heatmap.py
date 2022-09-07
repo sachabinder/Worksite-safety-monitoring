@@ -26,6 +26,9 @@ def sigmoid(x):
     else:
         return 255*(-2*(x/255)**2 + 4*(x/255) - 1)
 
+def gaussienne(x):
+    return 255*np.exp(-((x-127.5)/30)**2)
+
 def transformationSigmoidImage(img):
     """
     Renvoie une image en échelle de gris après amplification par une fonction sigmoïde.
@@ -33,6 +36,12 @@ def transformationSigmoidImage(img):
     """
     return Image.eval(img,sigmoid)
 
+def transformationClocheImage(img):
+    """
+    Renvoie une image en échelle de gris après amplification par une fonction sigmoïde.
+    img : image en échelle de gris
+    """
+    return Image.eval(img, gaussienne)
 #------------------------------------- Affichage d'image
 def displayImage(img, grey = True):
     """Affiche une image. Si on veut l'afficher en noir et blanc, il faut changer le terme 'grey' en false"""
@@ -58,9 +67,9 @@ img4 = echelles_de_gris(img4)
 
 #Comparaison image :
 I1 = img1
-I2 = img4
+I2 = img2
 I = differenceImage(I1, I2)
-I = transformationSigmoidImage(I)
+I = transformationClocheImage(I)
 
 displayImage(I)
 print(normImage(I))
