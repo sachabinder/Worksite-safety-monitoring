@@ -18,7 +18,20 @@ def differenceImage(image1, image2):
 def normImage(img):
     """Renvoie la norme d'un tableau représentant une image en échelle de gris"""
     tab = np.asarray(img)
-    return np.linalg.norm(tab, ord=1)
+    return np.linalg.norm(tab, ord=2)
+
+def sigmoid(x):
+    if x/255 < 0.5:
+        return 255*(2*(x/255)**2)
+    else:
+        return 255*(-2*(x/255)**2 + 4*(x/255) - 1)
+
+def transformationSigmoidImage(img):
+    """
+    Renvoie une image en échelle de gris après amplification par une fonction sigmoïde.
+    img : image en échelle de gris
+    """
+    return Image.eval(img,sigmoid)
 
 #------------------------------------- Affichage d'image
 def displayImage(img, grey = True):
@@ -47,5 +60,7 @@ img4 = echelles_de_gris(img4)
 I1 = img1
 I2 = img4
 I = differenceImage(I1, I2)
+I = transformationSigmoidImage(I)
+
 displayImage(I)
 print(normImage(I))
