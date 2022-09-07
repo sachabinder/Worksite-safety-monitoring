@@ -1,7 +1,5 @@
 import pathlib
 import torch
-import json
-import cv2
 import numpy as np
 from torchvision.ops import box_convert
 from typing import List, Tuple, Dict
