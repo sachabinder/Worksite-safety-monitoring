@@ -57,3 +57,33 @@ def get_bounding_box(poligon_points:List[List[int]]) -> List[int]:
     y_coords = [point[1] for point in poligon_points] 
     x_1, y_1, x_2, y_2 = min(x_coords), min(y_coords), max(x_coords), max(y_coords)
     return [x_1,y_1,x_2,y_2]
+
+
+#=========== TRANSFORMATION FUNCTIONS ===========
+
+def clip_bounding_boxes(input:np.ndarray, target:np.ndarray) -> np.array:
+    """
+    If the bounding boxes exceed one dimension, they are clipped to the dim's maximum.
+    Bounding boxes are expected to be in xyxy format.
+    Example: x_value=224 but x_shape=200 -> x1=199
+    """
+    output = []
+    for bounding_boxe in target:
+        x_1, y_1, x_2, y_2 = tuple(bounding_boxe)
+        x_shape = input.shape[1]
+        y_shape = input.shape[0]
+        x_1, y_1, x_2, y_2 = clip(x_1, x_shape), clip(y_1, y_shape), clip(x_2, x_shape), clip(y_2, y_shape)
+        output.append([x_1, y_1, x_2, y_2])
+    return np.array(output)
+
+def clip(value: int, max: int):
+    if value >= max - 1:
+        value = max - 1
+    elif value <= 0:
+        value = 0
+    return value
+
+def normalize_01(input: np.ndarray) -> np.ndarray:
+    """Squash image input to the value range [0, 1] (no clipping)"""
+    input_out = (input - np.min(input)) / np.ptp(input)
+    return input_out

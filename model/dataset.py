@@ -1,10 +1,17 @@
+from re import L
 import torch
 import json
 import pathlib
 import cv2
+import numpy as np
 from typing import List, Dict, Tuple
 from utils import (process_image,
-                   get_boxes_and_labels_from_target)
+                   get_boxes_and_labels_from_target,
+                   get_filenames_of_path,
+                   normalize_01)
+from transformation import (ComposeDouble,
+                            Clip,
+                            FunctionWrapperDouble)
 
 
 IMG_FOLDER = pathlib.Path("Detection_Train_Set/Detection_Train_Set_Img")
@@ -20,11 +27,12 @@ LABEL_INDEXES = {
 }
 
 
-class ObectsDataSet(torch.utils.data.Dataset):
+class ObjectsDataSet(torch.utils.data.Dataset):
     """Build a dataset of boxes with their corresponding labels with
     image and its corresponding target which should be a JSON file with
     the same name of the image.
     """
+
     def __init__(self,
                  image_paths:List[pathlib.Path],
                  target_paths:List[pathlib.Path],
@@ -61,15 +69,16 @@ class ObectsDataSet(torch.utils.data.Dataset):
                                                          box_input_format=self.box_format,
                                                          box_output_format=self.box_format_to_convert,
                                                          label_indexes=self.label_indexes)
+        boxes_labelled = {'boxes': boxes, 'labels': labels}
         if self.transform:  # apply transformations
-            boxes, labels = self.transform(boxes, labels)
+            image_transformed, boxes_labelled_transformed = self.transform(orig_image, boxes_labelled)
         # Convert to torch tensor
-        boxes = torch.from_numpy(boxes)
-        labels = torch.from_numpy(labels)
-        return {'img':image,
+        image_transformed = torch.from_numpy(image_transformed)
+        boxes_labelled_transformed = {key: torch.from_numpy(value) 
+                                        for key, value in boxes_labelled_transformed.items()}
+        return {'img':image_transformed,
                 'img_file_name':self.image_paths[index].name,
-                'boxes_labelled': {'boxes': boxes,
-                                   'labels': labels},
+                'boxes_labelled': boxes_labelled_transformed,
                 'target_file_name':self.target_paths[index].name}
     
     @staticmethod
@@ -78,3 +87,19 @@ class ObectsDataSet(torch.utils.data.Dataset):
         with open(target_path, "r") as f:
             target = json.load(f)
         return cv2.imread(str(img_path)), target
+
+
+def data_set_builder():
+    images_fles = get_filenames_of_path(IMG_FOLDER)
+    targets_files = get_filenames_of_path(TARGETS_FOLDER)
+    images_fles.sort()
+    targets_files.sort()
+    # adaptation and augmentation of dataset
+    transforms = ComposeDouble([Clip(),
+                                FunctionWrapperDouble(np.moveaxis, source=-1, destination=0),
+                                FunctionWrapperDouble(normalize_01)])
+    dataset = ObjectsDataSet(image_paths=images_fles,
+                             target_paths=targets_files,
+                             label_indexes=LABEL_INDEXES,
+                             transform=transforms)
+    return dataset
