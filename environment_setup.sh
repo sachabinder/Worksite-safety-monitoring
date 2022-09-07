@@ -7,6 +7,5 @@ conda install pytorch torchvision torchaudio cpuonly -c pytorch -y
 conda install -c conda-forge opencv -y
 conda install -c conda-forge matplotlib -y
 conda install -c anaconda pillow -y
-pip install utils 
 
 
