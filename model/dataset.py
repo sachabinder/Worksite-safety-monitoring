@@ -15,7 +15,8 @@ LABEL_INDEXES = {
     "Vertical_formwork":2,
     "Rebars":3,
     "Shoring":4,
-    "Concrete_pump_hose":5
+    "Concrete_pump_hose":5,
+    "Mixer_truck":6
 }
 
 

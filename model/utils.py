@@ -30,11 +30,14 @@ def get_boxes_and_labels_from_target(target:Dict,
     convert format : box_input_format -> box_output_format,
     from a polygon loaded through JSON file.
     """
-    boxes = np.array(
-                [get_bounding_box(object["points"]["exterior"]) for object in target["objects"]],
-                dtype=np.float32
-            )
-    boxes_converted = box_convert(boxes, in_fmt=box_input_format, out_fmt=box_output_format)
+    boxes = torch.tensor(
+                [get_bounding_box(object["points"]["exterior"]) for object in target["objects"]]
+            ).type(torch.float32)
+    if boxes.numel() != 0:
+        boxes_converted = box_convert(boxes, in_fmt=box_input_format, out_fmt=box_output_format)
+        boxes_converted = boxes_converted.numpy()
+    else:
+        boxes_converted = boxes.numpy()
     labels = np.array(
                     [label_indexes[object["classTitle"]] for object in target["objects"]],
                     dtype=np.int64
