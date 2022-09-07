@@ -1,9 +1,9 @@
 from PIL import Image
 import matplotlib.pyplot as plt
 import numpy as np
+import os
 
 # Différenciation d'images :
-
 def echelles_de_gris(img):
     """Renvoie une image après l'avoir converti en échelle de gris"""
     return img.convert('L')
@@ -18,7 +18,7 @@ def differenceImage(image1, image2):
 def normImage(img):
     """Renvoie la norme d'un tableau représentant une image en échelle de gris"""
     tab = np.asarray(img)
-    return np.linalg.norm(tab, ord=2)
+    return np.linalg.norm(tab, ord=1)
 
 def sigmoid(x):
     if x/255 < 0.5:
@@ -42,7 +42,7 @@ def transformationClocheImage(img):
     img : image en échelle de gris
     """
     return Image.eval(img, gaussienne)
-#------------------------------------- Affichage d'image
+#-------------------------------------
 def displayImage(img, grey = True):
     """Affiche une image. Si on veut l'afficher en noir et blanc, il faut changer le terme 'grey' en false"""
     if grey:
@@ -51,25 +51,31 @@ def displayImage(img, grey = True):
         plt.imshow(img)
     plt.show()
 
+def isSameCam(img1, img2,threshold):
+    """Vérifie si deux images sont suffisamment similaires pour venir de la même caméra."""
+    if img1.width == img2.width and img1.height == img2.height:
+        I = differenceImage(img1, img2)
+        I = transformationClocheImage(I)
+        return normImage(I)<threshold
+    else:
+        return False
+
 # --------------------------------------------------------------------------------
-img1 = Image.open("Detection_Test_Set/Detection_Test_Set_Img/2019-10-17-13-30-11.jpg")
-img1 = echelles_de_gris(img1)
 
-img2 = Image.open("Detection_Test_Set/Detection_Test_Set_Img/2019-10-17-13-42-19.jpg")
-img2 = echelles_de_gris(img2)
-
-img3 = Image.open("Detection_Test_Set/Detection_Test_Set_Img/2019-10-17-15-19-05.jpg")
-img3 = echelles_de_gris(img3)
-
-img4 = Image.open("Detection_Test_Set/Detection_Test_Set_Img/2020-07-15-11-36-02.jpg")
-img4 = echelles_de_gris(img4)
+path = "Detection_Test_Set/Detection_Test_Set_Img"
+ImageNameList = os.listdir(path)
+CameraList = []
+threshold = 50000
 
 
-#Comparaison image :
-I1 = img1
-I2 = img2
-I = differenceImage(I1, I2)
-I = transformationClocheImage(I)
+for imageName in ImageNameList:
+    img1 = echelles_de_gris(Image.open(path + "/" + imageName))
+    NewCamNecessary = True
+    for camera in CameraList:
+        img2 = echelles_de_gris(Image.open(path + "/" + camera[0]))
+        if isSameCam(img1,img2,threshold):
+            camera.append(imageName)
+            NewCamNecessary = False
 
-displayImage(I)
-print(normImage(I))
+    if NewCamNecessary:
+        CameraList.append([imageName])
