@@ -28,12 +28,14 @@ class ObectsDataSet(torch.utils.data.Dataset):
                  image_paths:List[pathlib.Path],
                  target_paths:List[pathlib.Path],
                  label_indexes:Dict,
+                 transform = None,
                  use_cache:bool=False,
                  box_convert_to_format:str = "xywh") -> None:
         self.image_paths = image_paths
         self.target_paths = target_paths
         self.box_format_to_convert = box_convert_to_format
         self.label_indexes = label_indexes
+        self.transform = transform
         self.use_cache = use_cache
         if self.use_cache:  # load images and targets into RAM
             from multiprocessing import Pool
@@ -58,10 +60,15 @@ class ObectsDataSet(torch.utils.data.Dataset):
                                                          box_input_format=self.box_format,
                                                          box_output_format=self.box_format_to_convert,
                                                          label_indexes=self.label_indexes)
+        if self.transform:  # apply transformations
+            boxes, labels = self.transform(boxes, labels)
+        # Convert to torch tensor
+        boxes = torch.from_numpy(boxes)
+        labels = torch.from_numpy(labels)
         return {'img':image,
                 'img_file_name':self.image_paths[index].name,
-                'target':{'boxes': boxes,
-                          'labels': labels},
+                'boxes_labelled': {'boxes': boxes,
+                                   'labels': labels},
                 'target_file_name':self.target_paths[index].name}
     
     @staticmethod
