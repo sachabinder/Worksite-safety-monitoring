@@ -7,20 +7,34 @@ import seaborn as sn
 
 
 def open_json(json_path):
+
     with open(json_path) as json_file:
         return json.load(json_file)
 
 
-def test_display(img_path, json_path, class_to_detect="People", line_th=2): # draw polygons around the class to detect
-    img = cv2.imread(img_path)
-    img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  # Convert to RGB
+def extract_polygons(json_path, class_to_detect="People"):
+
     data = open_json(json_path)
 
-    for entity in data["objects"]:
-        if entity["classTitle"] == class_to_detect:
-            pts = np.array(entity["points"]["exterior"],np.int32)
-            pts.reshape((-1,1,2))
-            cv2.polylines(img, [pts], isClosed=True, color=(255,0,0), thickness=line_th)
+    if "objects" in data:   # For json in the given dataset
+        return [np.array(item["points"]["exterior"], np.int32)
+                for item in data["objects"]
+                if item["classTitle"] == class_to_detect]
+    else:                   # For json build by the program
+        return [np.reshape(np.array(item["boxes"], np.int32), (2, 2))
+                for item in data["boxes_labelled"]
+                if item["label"] == class_to_detect]
+
+
+def test_display(img_path, json_path, class_to_detect="People", line_th=2):
+    """ Draw polygons around the class to detect
+    """
+    img = cv2.imread(img_path)
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  # Convert to RGB
+    polygons = extract_polygons(json_path, class_to_detect)
+
+    for polygon in polygons :
+        cv2.polylines(img, [polygon], isClosed=True, color=(255, 0, 0), thickness=line_th)
 
     plt.figure(figsize=(20, 30))  # display the output image
     plt.imshow(img)
@@ -38,9 +52,9 @@ def heatmap(json_path_lst, img_path, class_to_detect="People", resize_ratio=10):
     heat_array = np.zeros((w_heat, h_heat))
     for json_path in json_path_lst:
         data = open_json(json_path)
-        for entity in data["objects"] :
-            if entity["classTitle"] == class_to_detect:
-                pts = entity["points"]["exterior"]
+        for item in data["objects"] :
+            if item["classTitle"] == class_to_detect:
+                pts = item["points"]["exterior"]
                 x1 = min(pts[0][0], pts[1][0])
                 x2 = max(pts[0][0], pts[1][0])
                 y1 = min(pts[0][1], pts[1][1])
@@ -60,7 +74,7 @@ json_test_path = 'Detection_Train_Set/Detection_Train_Set_Json/Batch2__BioSAV_BI
 img_test_path = 'Detection_Train_Set/Detection_Train_Set_Img/Batch2__BioSAV_BIofiltration_18mois_05frame3049.jpg'
 json_begining = 'Detection_Train_Set/Detection_Train_Set_Json/Batch2__BioSAV_BIofiltration_18mois_05frame'
 json_test_path_list = []
-for frame in range(3059, 3540,5):
+for frame in range(3059, 3540, 5):
     if frame != 3289:
         json_test_path_list.append(json_begining + str(frame) + ".jpg.json")
 
