@@ -46,7 +46,6 @@ def get_bounding_box(json_path, class_to_detect='People'):
 
 def display_detection(img_path, json_path, class_to_detect="People", line_th=2):
     """ Draw polygons around the class to detect
-        NB : for 'People' the polygons are just lines
     """
     img = cv2.imread(img_path)
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  # Convert to RGB
