@@ -175,7 +175,7 @@ def heatmap(json_path_lst, img_path, class_to_detect="People"):
         for [[x1, y1], [x2, y2]] in boxes:
             dx = x2-x1
             dy = y2-y1
-            ratio = 1
+            ratio = 1.5
             m_x = (x1+x2)/2
             m_y = (y1+y2)/2
             x3 = max(0, int(x1-ratio*dx))
@@ -184,8 +184,9 @@ def heatmap(json_path_lst, img_path, class_to_detect="People"):
             y4 = min(w, int(y2 + ratio*dy))
             for x in range(x3, x4):
                 for y in range(y3, y4):
-                    if ((x-m_x)/dx)**2+((y-m_y)/dy)**2 < ratio:
-                        heat_array[y, x] += 1/(0.2+((x-m_x)/dx)**2+((y-m_y)/dy)**2)
+                    dist2 = ((x-m_x)/dx)**2+((y-m_y)/dy)**2
+                    if ((x-m_x)/dx)**2+((y-m_y)/dy)**2 < ratio**2:
+                        heat_array[y, x] += (ratio-dist2**0.5)/(0.2+dist2)
 
     heat_array = add_gradient(heat_array)
     heat_img = Image.fromarray(heat_array, mode='RGB')
