@@ -65,9 +65,7 @@ def heatmap(json_path_lst, img_path, class_to_detect="People", resize_ratio=3):
     img = cv2.imread(img_path)  # Read image with cv2
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  # Convert to RGB
     [w, h] = img.shape[:2]
-    w_heat = w//resize_ratio
-    h_heat = h//resize_ratio
-    heat_array = np.zeros((w_heat, h_heat))
+    heat_array = np.zeros((w//resize_ratio, h//resize_ratio))
 
     for json_path in json_path_lst:
         boxes = get_bounding_box(json_path, class_to_detect)
@@ -82,17 +80,15 @@ def heatmap(json_path_lst, img_path, class_to_detect="People", resize_ratio=3):
     plt.show()
 
 
-# For test
+if __name__ =="__main__":
+    json_test_path = 'Detection_Train_Set/Detection_Train_Set_Json/Batch2__BioSAV_BIofiltration_18mois_05frame3059.jpg.json'
+    img_test_path = 'Detection_Train_Set/Detection_Train_Set_Img/Batch2__BioSAV_BIofiltration_18mois_05frame3059.jpg'
+    json_begining = 'Detection_Train_Set/Detection_Train_Set_Json/Batch2__BioSAV_BIofiltration_18mois_05frame'
 
+    json_test_path_list = []
+    for frame in range(3059, 3540, 5):
+        if frame != 3289:
+            json_test_path_list.append(json_begining + str(frame) + ".jpg.json")
 
-json_test_path = 'Detection_Train_Set/Detection_Train_Set_Json/Batch2__BioSAV_BIofiltration_18mois_05frame3059.jpg.json'
-img_test_path = 'Detection_Train_Set/Detection_Train_Set_Img/Batch2__BioSAV_BIofiltration_18mois_05frame3059.jpg'
-json_begining = 'Detection_Train_Set/Detection_Train_Set_Json/Batch2__BioSAV_BIofiltration_18mois_05frame'
-
-json_test_path_list = []
-for frame in range(3059, 3540, 5):
-    if frame != 3289:
-        json_test_path_list.append(json_begining + str(frame) + ".jpg.json")
-
-#display_detection(img_test_path, json_test_path)
-heatmap(json_test_path_list, img_test_path)
+    display_detection(img_test_path, json_test_path)
+    heatmap(json_test_path_list, img_test_path)
