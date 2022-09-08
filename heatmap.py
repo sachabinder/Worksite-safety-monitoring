@@ -134,24 +134,24 @@ def display_detection(img_path, json_path, class_to_detect="People", line_th=2):
 
 
 def gradient(ratio):
-    ratio = 1.2*ratio
-    RGB = np.array([0, 0, 0])
-    if ratio < 0.1:
-        RGB[2] = 0.5 + 5*ratio
-    elif ratio < 0.3:
-        RGB[1] = (ratio-0.1)*5
+    ratio += 0.1
+    RGB = np.array([0., 0., 0.])
+    if ratio < 0.2:
+        RGB[2] = 5*ratio
+    elif ratio < 0.4:
+        RGB[1] = (ratio-0.2)*5
         RGB[2] = 1
-    elif ratio < 0.5:
-        RGB[0] = (ratio-0.3)*5
+    elif ratio < 0.6:
+        RGB[0] = (ratio-0.4)*5
         RGB[1] = 1
-        RGB[2] = (0.5-ratio)*5
-    elif ratio < 0.7:
+        RGB[2] = (0.6-ratio)*5
+    elif ratio < 0.8:
         RGB[0] = 1
-        RGB[1] = (0.7-ratio)*5
-    elif ratio <0.8:
-        RGB[0] = (0.8-ratio)*5
+        RGB[1] = (0.8-ratio)*5
+    elif ratio < 0.9:
+        RGB[0] = (1-ratio)*5
     else:
-        RGB[0] = 127
+        RGB[0] = 0.5
     return 255*RGB
 
 
@@ -167,19 +167,30 @@ def add_gradient(heat_array):
 
 def heatmap(json_path_lst, img_path, class_to_detect="People"):
     img = cv2.imread(img_path)  # Read image with cv2
-    heat_array = np.zeros(img.shape[:2])
+    w, h = img.shape[:2]
+    heat_array = np.zeros((w, h))
 
     for json_path in json_path_lst:
         boxes = get_bounding_box(json_path, class_to_detect)
         for [[x1, y1], [x2, y2]] in boxes:
-            for x in range(x1, x2):
-                for y in range(y1, y2):
-                    heat_array[y, x] += 1
+            dx = x2-x1
+            dy = y2-y1
+            ratio = 1
+            m_x = (x1+x2)/2
+            m_y = (y1+y2)/2
+            x3 = max(0, int(x1-ratio*dx))
+            x4 = min(h, int(x2+ratio*dx))
+            y3 = max(0, int(y1 - ratio*dy))
+            y4 = min(w, int(y2 + ratio*dy))
+            for x in range(x3, x4):
+                for y in range(y3, y4):
+                    if ((x-m_x)/dx)**2+((y-m_y)/dy)**2 < ratio:
+                        heat_array[y, x] += 1/(0.2+((x-m_x)/dx)**2+((y-m_y)/dy)**2)
 
     heat_array = add_gradient(heat_array)
     heat_img = Image.fromarray(heat_array, mode='RGB')
     img = Image.open(img_path)
-    new_image = Image.blend(heat_img, img, .25)
+    new_image = Image.blend(heat_img, img, .6)
     new_image.show()
 
 
