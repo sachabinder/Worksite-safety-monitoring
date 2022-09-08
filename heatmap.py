@@ -66,8 +66,6 @@ def heatmap(json_path_lst, img_path, class_to_detect="People", resize_ratio=10):
     df = pd.DataFrame(heat_array, columns=None)
     sn.heatmap(df, xticklabels=False, yticklabels=False, cbar=False)
     plt.pcolor(df)
-    plt.yticks(np.arange(0.5, len(df.index), 1), df.index)
-    plt.xticks(np.arange(0.5, len(df.columns), 1), df.columns)
     plt.show()
 
 
