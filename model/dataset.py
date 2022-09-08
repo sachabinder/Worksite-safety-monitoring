@@ -6,6 +6,8 @@ import cv2
 import numpy as np
 from typing import List, Dict, Tuple
 from torch.utils.data import DataLoader
+from torchvision.models.detection.transform import GeneralizedRCNNTransform
+from torchvision.ops import box_area, box_convert
 from utils import (process_image,
                    get_boxes_and_labels_from_target,
                    get_filenames_of_path,
@@ -106,13 +108,45 @@ def dataset_builder() -> torch.utils.data.Dataset:
                              transform=transforms)
     return dataset
 
-# TODO remove this part only for testss
-if __name__=="__main__":
-    dataset = dataset_builder()
-    dataloader = DataLoader(dataset=dataset,
-                            batch_size=2,
-                            shuffle=True,
-                            num_workers=0,
-                            collate_fn=collate_double)
-    batch = next(iter(dataloader))
-    print(batch)
+def dataset_stats(dataset: torch.utils.data.Dataset,
+                  rcnn_transform: GeneralizedRCNNTransform = False) -> Dict:
+    """Iterates over the dataset and returns some stats.
+    Can be useful to pick the right anchor box sizes.
+    """
+    stats = {
+        "image_height": [],
+        "image_width": [],
+        "image_mean": [],
+        "image_std": [],
+        "boxes_height": [],
+        "boxes_width": [],
+        "boxes_num": [],
+        "boxes_area": []
+    }
+    for batch in dataset:
+        # Batch
+        image, boxes_labelled = batch["img"], batch["boxes_labelled"]
+        # Transform
+        if rcnn_transform:
+            image, boxes_labelled = rcnn_transform([image], [boxes_labelled])
+            image, boxes_labelled = image.tensors, boxes_labelled[0]
+        # Image
+        stats["image_height"].append(image.shape[-2])
+        stats["image_width"].append(image.shape[-1])
+        stats["image_mean"].append(image.mean().item())
+        stats["image_std"].append(image.std().item())
+        # box
+        wh = boxes_labelled["boxes"][:, -2:]
+        stats["boxes_height"].append(wh[:, 1])
+        stats["boxes_width"].append(wh[:, 0])
+        stats["boxes_num"].append(len(wh))
+        stats["boxes_area"].append(
+            box_area(
+                box_convert(boxes_labelled["boxes"], in_fmt="xywh", out_fmt="xyxy")
+            )
+        )
+    # convertion in torch tensor
+    for key, val in stats.items():
+        if key == "boxes_height" or key =="boxes_width":
+            stats[key] = torch.cat(val)
+    return stats
