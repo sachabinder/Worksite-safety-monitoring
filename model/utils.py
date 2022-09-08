@@ -33,11 +33,7 @@ def get_boxes_and_labels_from_target(target:Dict,
     boxes = torch.tensor(
                 [get_bounding_box(object["points"]["exterior"]) for object in target["objects"]]
             ).type(torch.float32)
-    if boxes.numel() != 0:
-        boxes_converted = box_convert(boxes, in_fmt=box_input_format, out_fmt=box_output_format)
-        boxes_converted = boxes_converted.numpy()
-    else:
-        boxes_converted = boxes.numpy()
+    boxes_converted = box_convert(boxes, in_fmt=box_input_format, out_fmt=box_output_format).numpy()
     labels = np.array(
                     [label_indexes[object["classTitle"]] for object in target["objects"]],
                     dtype=np.int64
