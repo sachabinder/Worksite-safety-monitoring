@@ -8,12 +8,12 @@ from torch.utils.data import DataLoader
 from torchvision.models.detection.transform import GeneralizedRCNNTransform
 from torchvision.ops import box_area
 from model.utils import (process_image,
-                   get_boxes_and_labels_from_target,
-                   get_filenames_of_path,
-                   normalize_01)
+                         get_boxes_and_labels_from_target,
+                         get_filenames_of_path,
+                         normalize_01)
 from model.transformation import (ComposeDouble,
-                            Clip,
-                            FunctionWrapperDouble)
+                                  Clip,
+                                  FunctionWrapperDouble)
 
 
 IMG_FOLDER = pathlib.Path("Detection_Train_Set/Detection_Train_Set_Img")
@@ -146,3 +146,7 @@ def dataset_stats(dataset: torch.utils.data.Dataset,
         if key == "boxes_height" or key =="boxes_width":
             stats[key] = torch.cat(val)
     return stats
+
+if __name__ == "__main__":
+    dataset = dataset_builder()
+    print(dataset[0])
