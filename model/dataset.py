@@ -5,10 +5,12 @@ import pathlib
 import cv2
 import numpy as np
 from typing import List, Dict, Tuple
+from torch.utils.data import DataLoader
 from utils import (process_image,
                    get_boxes_and_labels_from_target,
                    get_filenames_of_path,
-                   normalize_01)
+                   normalize_01,
+                   collate_double)
 from transformation import (ComposeDouble,
                             Clip,
                             FunctionWrapperDouble)
@@ -58,7 +60,7 @@ class ObjectsDataSet(torch.utils.data.Dataset):
         """
         return len(self.image_paths)
     
-    def __getitem__(self, index:int) -> Dict:
+    def __getitem__(self, index:int) -> Dict[torch.tensor, str]:
         if self.use_cache:
             orig_image, target = self.cached_data[index]
         else:
@@ -71,7 +73,7 @@ class ObjectsDataSet(torch.utils.data.Dataset):
                                                          label_indexes=self.label_indexes)
         boxes_labelled = {'boxes': boxes, 'labels': labels}
         if self.transform:  # apply transformations
-            image_transformed, boxes_labelled_transformed = self.transform(orig_image, boxes_labelled)
+            image_transformed, boxes_labelled_transformed = self.transform(image, boxes_labelled)
         # Convert to torch tensor
         image_transformed = torch.from_numpy(image_transformed)
         boxes_labelled_transformed = {key: torch.from_numpy(value) 
@@ -89,7 +91,7 @@ class ObjectsDataSet(torch.utils.data.Dataset):
         return cv2.imread(str(img_path)), target
 
 
-def data_set_builder():
+def dataset_builder() -> torch.utils.data.Dataset:
     images_fles = get_filenames_of_path(IMG_FOLDER)
     targets_files = get_filenames_of_path(TARGETS_FOLDER)
     images_fles.sort()
@@ -103,3 +105,14 @@ def data_set_builder():
                              label_indexes=LABEL_INDEXES,
                              transform=transforms)
     return dataset
+
+# TODO remove this part only for testss
+if __name__=="__main__":
+    dataset = dataset_builder()
+    dataloader = DataLoader(dataset=dataset,
+                            batch_size=2,
+                            shuffle=True,
+                            num_workers=0,
+                            collate_fn=collate_double)
+    batch = next(iter(dataloader))
+    print(batch)

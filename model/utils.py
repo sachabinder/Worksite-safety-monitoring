@@ -20,7 +20,7 @@ def process_image(image:np.ndarray) -> torch.Tensor:
     """
     if len(image.shape) == 4: # convert RGBA -> RGB
         image = image.convert('RGB')
-    return torch.from_numpy(image).type(torch.float32)
+    return image
 
 def get_boxes_and_labels_from_target(target:Dict,
                                      box_input_format:str,
@@ -87,3 +87,17 @@ def normalize_01(input: np.ndarray) -> np.ndarray:
     """Squash image input to the value range [0, 1] (no clipping)"""
     input_out = (input - np.min(input)) / np.ptp(input)
     return input_out
+
+
+#=========== DATA LOADER FUNCTIONS ===========
+
+def collate_double(batch:Dict[torch.tensor, str]) -> Tuple[torch.tensor, str]:
+    """
+    collate function for the ObjectsDataSet.
+    Only used by the dataloader.
+    """
+    images = [sample['img'] for sample in batch]
+    boxes_labelled = [sample['boxes_labelled'] for sample in batch]
+    images_name = [sample['img_file_name'] for sample in batch]
+    target_file_name = [sample['target_file_name'] for sample in batch]
+    return images, boxes_labelled, images_name, target_file_name
