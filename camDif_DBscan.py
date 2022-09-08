@@ -28,35 +28,43 @@ def isSameCam(img1, img2, threshold):
         return False
 
 
-def imageDifferentiation(threshold, path):
+# ===============================================
+def imageDifDBScan(threshold, path):
     ImageNameList = os.listdir(path)
     CameraList = []
 
-    for imageName in ImageNameList:
-        img1 = Image.open(path + imageName).convert('L') # Opening and greyscale conversion
-        NewCamNecessary = True
+    while len(ImageNameList) > 0:
+        print(len(ImageNameList))
+        img0 = ImageNameList.pop(0)
+        neighbours = [img0]
+        newCamera = [img0]
 
-        for camera in CameraList:
-            img2 = Image.open(path + camera[0]).convert('L')
-            if isSameCam(img1, img2, threshold):
-                camera.append(imageName)
-                NewCamNecessary = False
+        while len(neighbours) > 0:
+            print("    ", len(neighbours))
+            name = neighbours.pop(0)
+            img1 = Image.open(path + name).convert('L')
 
-        if NewCamNecessary:
-            CameraList.append([imageName])
+            for imageName in ImageNameList:
+                img2 = Image.open(path + imageName).convert('L')
+                if isSameCam(img1, img2, threshold):
+                    neighbours.append(imageName)
+                    newCamera.append(imageName)
+                    ImageNameList.remove(imageName)
+
+        CameraList.append(newCamera)
 
     return CameraList
 
 
 if __name__ == "__main__":
     path = "Detection_Test_Set/Detection_Test_Set_Img/"
-    CameraList = imageDifferentiation(60000, path)
+    CameraList = imageDifDBScan(45000, path)
     for camera in CameraList:
         k = 1
         for image in camera:
             img = Image.open(path + image)
-            if k < 17:
-                plt.subplot(4, 4, k)
+            if k < 26:
+                plt.subplot(5, 5, k)
                 plt.imshow(img)
             k += 1
 
