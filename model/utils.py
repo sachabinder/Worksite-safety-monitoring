@@ -3,6 +3,8 @@ import torch
 import numpy as np
 from torchvision.ops import box_convert
 from typing import List, Tuple, Dict
+from metrics.bounding_box import BoundingBox
+from metrics.enumerators import BBFormat, BBType
 
 
 def get_filenames_of_path(path:pathlib.Path, ext:str = "*") -> List[pathlib.Path]:
@@ -12,6 +14,24 @@ def get_filenames_of_path(path:pathlib.Path, ext:str = "*") -> List[pathlib.Path
     assert len(filenames) > 0, f"No files found in path: {path}"
     return filenames
 
+def from_dict_to_boundingbox(file: dict, name: str, groundtruth: bool = True):
+    """Returns list of BoundingBox objects from groundtruth or prediction.
+    """
+    labels = file["labels"]
+    boxes = file["boxes"]
+    scores = np.array(file["scores"].cpu()) if not groundtruth else [None] * len(boxes)
+    gt = BBType.GROUND_TRUTH if groundtruth else BBType.DETECTED
+    return [
+        BoundingBox(
+            image_name=name,
+            class_id=int(l),
+            coordinates=tuple(bb),
+            format=BBFormat.XYX2Y2,
+            bb_type=gt,
+            confidence=s,
+        )
+        for bb, l, s in zip(boxes, labels, scores)
+    ]
 
 #=========== DATA SET AUXILIARY FUNCTIONS ===========
 
@@ -33,7 +53,8 @@ def get_boxes_and_labels_from_target(target:Dict,
     boxes = torch.tensor(
                 [get_bounding_box(object["points"]["exterior"]) for object in target["objects"]]
             ).type(torch.float32)
-    boxes_converted = box_convert(boxes, in_fmt=box_input_format, out_fmt=box_output_format).numpy()
+    if box_output_format:
+        boxes_converted = box_convert(boxes, in_fmt=box_input_format, out_fmt=box_output_format).numpy()
     labels = np.array(
                     [label_indexes[object["classTitle"]] for object in target["objects"]],
                     dtype=np.int64

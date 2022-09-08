@@ -3,8 +3,8 @@ https://github.com/johschmidt42/PyTorch-Object-Detection-Faster-RCNN-Tutorial/bl
 """
 import numpy as np
 from typing import List, Callable, Tuple
-from utils import clip_bounding_boxes
 from functools import partial
+from model.utils import clip_bounding_boxes
 
 
 class Compose:

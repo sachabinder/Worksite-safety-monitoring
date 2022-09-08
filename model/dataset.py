@@ -1,4 +1,3 @@
-from re import L
 import torch
 import json
 import pathlib
@@ -7,13 +6,12 @@ import numpy as np
 from typing import List, Dict, Tuple
 from torch.utils.data import DataLoader
 from torchvision.models.detection.transform import GeneralizedRCNNTransform
-from torchvision.ops import box_area, box_convert
-from utils import (process_image,
+from torchvision.ops import box_area
+from model.utils import (process_image,
                    get_boxes_and_labels_from_target,
                    get_filenames_of_path,
-                   normalize_01,
-                   collate_double)
-from transformation import (ComposeDouble,
+                   normalize_01)
+from model.transformation import (ComposeDouble,
                             Clip,
                             FunctionWrapperDouble)
 
@@ -43,7 +41,7 @@ class ObjectsDataSet(torch.utils.data.Dataset):
                  label_indexes:Dict,
                  transform = None,
                  use_cache:bool=False,
-                 box_convert_to_format:str = "xywh") -> None:
+                 box_convert_to_format:str = None) -> None:
         self.image_paths = image_paths
         self.target_paths = target_paths
         self.box_format_to_convert = box_convert_to_format
@@ -67,7 +65,7 @@ class ObjectsDataSet(torch.utils.data.Dataset):
             orig_image, target = self.cached_data[index]
         else:
             orig_image, target = self.extract_img_and_target_from_path(img_path=self.image_paths[index],
-                                                                    target_path=self.target_paths[index])
+                                                                       target_path=self.target_paths[index])
         image = process_image(image=orig_image)
         boxes, labels = get_boxes_and_labels_from_target(target=target,
                                                          box_input_format=self.box_format,
@@ -141,9 +139,7 @@ def dataset_stats(dataset: torch.utils.data.Dataset,
         stats["boxes_width"].append(wh[:, 0])
         stats["boxes_num"].append(len(wh))
         stats["boxes_area"].append(
-            box_area(
-                box_convert(boxes_labelled["boxes"], in_fmt="xywh", out_fmt="xyxy")
-            )
+            box_area(boxes_labelled["boxes"])
         )
     # convertion in torch tensor
     for key, val in stats.items():
