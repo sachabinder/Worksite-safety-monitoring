@@ -28,6 +28,7 @@ def extract_polygons(json_path, class_to_detect="People"):
 
 def test_display(img_path, json_path, class_to_detect="People", line_th=2):
     """ Draw polygons around the class to detect
+        NB : for 'People' the polygons are just lines
     """
     img = cv2.imread(img_path)
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  # Convert to RGB
@@ -50,18 +51,18 @@ def heatmap(json_path_lst, img_path, class_to_detect="People", resize_ratio=10):
     w_heat = w//resize_ratio
     h_heat = h//resize_ratio
     heat_array = np.zeros((w_heat, h_heat))
+
     for json_path in json_path_lst:
-        data = open_json(json_path)
-        for item in data["objects"] :
-            if item["classTitle"] == class_to_detect:
-                pts = item["points"]["exterior"]
-                x1 = min(pts[0][0], pts[1][0])
-                x2 = max(pts[0][0], pts[1][0])
-                y1 = min(pts[0][1], pts[1][1])
-                y2 = max(pts[0][1], pts[1][1])
-                for x in range(x1//resize_ratio, x2//resize_ratio):
-                    for y in range(y1//resize_ratio, y2//resize_ratio):
-                        heat_array[y, x] += 1
+        polygons = extract_polygons(json_path,class_to_detect)
+        for polygon in polygons:
+            x1 = min(polygon[0][0], polygon[1][0])
+            x2 = max(polygon[0][0], polygon[1][0])
+            y1 = min(polygon[0][1], polygon[1][1])
+            y2 = max(polygon[0][1], polygon[1][1])
+            for x in range(x1//resize_ratio, x2//resize_ratio):
+                for y in range(y1//resize_ratio, y2//resize_ratio):
+                    heat_array[y, x] += 1
+
     df = pd.DataFrame(heat_array, columns=None)
     sn.heatmap(df, xticklabels=False, yticklabels=False, cbar=False)
     plt.pcolor(df)
@@ -70,9 +71,13 @@ def heatmap(json_path_lst, img_path, class_to_detect="People", resize_ratio=10):
     plt.show()
 
 
+# For test
+
+
 json_test_path = 'Detection_Train_Set/Detection_Train_Set_Json/Batch2__BioSAV_BIofiltration_18mois_05frame3059.jpg.json'
 img_test_path = 'Detection_Train_Set/Detection_Train_Set_Img/Batch2__BioSAV_BIofiltration_18mois_05frame3049.jpg'
 json_begining = 'Detection_Train_Set/Detection_Train_Set_Json/Batch2__BioSAV_BIofiltration_18mois_05frame'
+
 json_test_path_list = []
 for frame in range(3059, 3540, 5):
     if frame != 3289:
