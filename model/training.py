@@ -8,7 +8,7 @@ from pytorch_lightning.loggers.neptune import NeptuneLogger
 from pytorch_lightning import Trainer, seed_everything
 from pytorch_lightning.callbacks import (
     EarlyStopping,
-    LearningRateLogger,
+    LearningRateMonitor,
     ModelCheckpoint,
 )
 from model.utils import (
@@ -34,7 +34,7 @@ from model.utils import (
 from model.faster_rcnn import get_faster_rcnn_resnet,FasterRCNNlightning
 
 #=========== GLOBAL PARAMS ===========
-USE_CACHE = False
+USE_CACHE = True
 LABEL_INDEXES = {
     "__background__":0,
     "People":1,
@@ -58,9 +58,10 @@ class Params:
     BATCH_SIZE: int = 1
     OWNER: str = "sachabinder"  # set your name here
     PROJECT: str = "worksite-safety-monitoring" # project name
+    EXPERIMENT: str = "worksite-safety-monitoring"
     SAVE_DIR: Optional[str] = "../experiments"  # checkpoints will be saved to cwd (current working directory)
     LOG_MODEL: bool = False  # whether to log the model to neptune after training
-    GPU: Optional[int] = None  # set to None for cpu training
+    GPU: Optional[int] = 1  # set to None for cpu training
     LR: float = 0.001 # learning rage
     PRECISION: int = 32
     CLASSES: int = 7 # number of classes
@@ -159,11 +160,10 @@ def main():
     # neptune logger
     neptune_logger = NeptuneLogger(
         api_key="eyJhcGlfYWRkcmVzcyI6Imh0dHBzOi8vYXBwLm5lcHR1bmUuYWkiLCJhcGlfdXJsIjoiaHR0cHM6Ly9hcHAubmVwdHVuZS5haSIsImFwaV9rZXkiOiJmZTBkYWFjZC04ZjFjLTQ2NWQtOTBkZi0yMmUxYjMwYTI4NzcifQ==",
-        project_name=f"{params.OWNER}/{params.PROJECT}",  # use your neptune name here
-        experiment_name=params.PROJECT,
-        params=params.__dict__,
+        project="sachabinder/worksite-safety-monitoring",  # use your neptune name here
+        name="train"
     )
-    assert neptune_logger.name  # http GET request to check if the project exists
+    assert neptune_logger.name, print(neptune_logger.name)  # http GET request to check if the project exists
     # model init
     model = get_faster_rcnn_resnet(
         num_classes=params.CLASSES,
@@ -180,7 +180,7 @@ def main():
     )
     # callbacks
     checkpoint_callback = ModelCheckpoint(monitor="Validation_mAP", mode="max")
-    learningrate_callback = LearningRateLogger()
+    learningrate_callback = LearningRateMonitor()
     early_stopping_callback = EarlyStopping(
         monitor="Validation_mAP", patience=params.PATIENCE, mode="max"
     )
@@ -193,11 +193,11 @@ def main():
         logger=neptune_logger,
         num_sanity_val_steps=0,
         max_epochs=params.MAXEPOCHS,
-        log_save_interval=1
+        log_every_n_steps=1,
     )
     # start training
     trainer.fit(
-        model=task, train_dataloader=dataloader_train, val_dataloaders=dataloader_valid
+        model=task, train_dataloaders=dataloader_train, val_dataloaders=dataloader_valid
     )
     # start testing
     trainer.test(ckpt_path="best", dataloaders=dataloader_test)
