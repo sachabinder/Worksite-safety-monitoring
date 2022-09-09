@@ -18,7 +18,7 @@ Execute learning script require a lot of computation power. That is why, we sugg
 Run the heatmap_demo() function to build heatmaps of the training set
 These images will be saved in Detection_Train_Set/heatmaps
 
-Run the detection_demo() to see rectangles around people identified
+Run the detection_demo() function to see rectangles around people identified
 
 
 
