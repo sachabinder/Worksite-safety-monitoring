@@ -15,10 +15,10 @@ Execute learning script require a lot of computation power. That is why, we sugg
 
 ## Execute the heatmap script
 
-Run heatmap_demo() to build heatmaps of the training set
+Run the heatmap_demo() function to build heatmaps of the training set
 These images will be saved in Detection_Train_Set/heatmaps
 
-Run detection demo to see rectangles around people identified
+Run the detection_demo() function to see rectangles around people identified
 
 
 
