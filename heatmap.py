@@ -228,10 +228,7 @@ def heatmap(json_path_lst, img_path, class_to_detect="People"):
     return new_image
 
 
-
-if __name__ == "__main__":
-
-    #camera_lst = image_differentiation(50000, path_img)
+def heatmap_demo():
     camera_lst = camera_list_train_set()
 
     path_img_train = "Detection_Train_Set/Detection_Train_Set_Img"
@@ -246,6 +243,10 @@ if __name__ == "__main__":
         image.save("Detection_Train_Set/heatmaps/heatmap_" + str(i) + ".png", 'png')
         i += 1
 
+
+def detection_demo():
+
     json_test_path = 'Detection_Train_Set/Detection_Train_Set_Json/Batch2__BioSAV_BIofiltration_18mois_05frame3049.jpg.json'
     img_test_path = 'Detection_Train_Set/Detection_Train_Set_Img/Batch2__BioSAV_BIofiltration_18mois_05frame3049.jpg'
-    # display_detection(img_test_path, json_test_path)
+
+    display_detection(img_test_path, json_test_path)
