@@ -191,7 +191,7 @@ class FasterRCNNlightning(pl.LightningModule):
                  ):
         super(FasterRCNNlightning, self).__init__()
         # Model
-        self.model = model
+        self.model = model.double()
         # Classes (background inclusive)
         self.num_classes = self.model.num_classes
         # Learning rate
@@ -211,13 +211,13 @@ class FasterRCNNlightning(pl.LightningModule):
         return self.model(image)
 
     def training_step(self, batch, batch_idx):
-        self.model = self.model
         # Batch
         image, boxes_labelled, image_name, label_name = batch  # tuple unpacking
+        
         loss_dict = self.model(image, boxes_labelled)
         loss = sum(loss for loss in loss_dict.values())
         #self.log_dict(loss_dict)
-        return loss
+        return {"loss":loss, "log":loss_dict}
 
     def validation_step(self, batch, batch_idx):
         # Batch
