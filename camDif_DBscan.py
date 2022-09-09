@@ -16,7 +16,7 @@ def normImage(img):
 
 
 def gaussienne(x):
-    return 255 * np.exp(-((x - 127.5) / 30) ** 2)
+    return 255 * sigmoid(np.exp(-((x - 127.5) / 30) ** 2))
 
 
 def isSameCam(img1, img2, threshold):
@@ -58,7 +58,7 @@ def imageDifDBScan(threshold, path):
 
 if __name__ == "__main__":
     path = "Detection_Test_Set/Detection_Test_Set_Img/"
-    CameraList = imageDifDBScan(45000, path)
+    CameraList = imageDifDBScan(40000, path)
     for camera in CameraList:
         k = 1
         for image in camera:
