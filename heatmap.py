@@ -253,20 +253,10 @@ def detection_demo():
     img_test_path = 'Detection_Train_Set/Detection_Train_Set_Img/Batch2__BioSAV_BIofiltration_18mois_05frame3049.jpg'
     display_detection(img_test_path, json_test_path)
 
-if __name__ == "__main__":
+def differentiation_demo():
     path = "Detection_Test_Set/Detection_Test_Set_Img/"
     threshold = 55000
-
     CameraList = image_differentiation(threshold, path)
-    for camera in CameraList:
-        k = 1
-        for image in camera:
-            img = Image.open(path + image)
-            if k < 25:
-                plt.subplot(5, 5, k)
-                plt.imshow(img)
-            k += 1
 
-        plt.show()
 
 
