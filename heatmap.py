@@ -55,27 +55,55 @@ def image_differentiation(threshold, path):
 
 #=================================== Heatmap
 
-def similar_name(img_name1, img_name2):
-    test_length = 15
-    return img_name1[:test_length] == img_name2[:test_length]
+def add_zeros(path, file="jpg"):
+    if file == "jpg":
+        if path[-8] == 'e':
+            path = path[:-7] + '0' + path[-7:]
+        if path[-7] == 'e':
+            path = path[:-6] + "00" + path[-6:]
+    if file == "json":
+        if path[-13] == 'e':
+            path = path[:-12] + '0' + path[-12:]
+        if path[-12] == 'e':
+            path = path[:-11] + "00" + path[-11:]
+    return path
 
 
-def sort_images_names(path):    # only works for the training set
-    image_name_list = os.listdir(path)
-    camera_list = []
-    for img_name1 in image_name_list:
-        new_cam_necessary = True
-        for camera in camera_list:
-            img_name2 = camera[0]
-            if similar_name(img_name1, img_name2):
-                camera.append(img_name1)
-                new_cam_necessary = False
-                break
+def camera_list_train_set():
+    ''' Create the list of the different cameras only for training set
+        (The training set is a little bit messy, that's why this function is terrible)
+    '''
+    path_img_train = "Detection_Train_Set/Detection_Train_Set_Img"
+    path_json_train = "Detection_Train_Set/Detection_Train_Set_Json"
 
-        if new_cam_necessary:
-            camera_list.append([img_name1])
+    first_names = ["Batch2__BioSAV_BIofiltration_18mois_05frame3049.jpg",
+                   "Batch2__Devisubox2_06frame0053.jpg",
+                   "Batch2__Devisubox2_06frame5209.jpg",
+                   "Batch2__Marseille_01frame0530.jpg",
+                   "Batch2__Marseille_01frame0707.jpg",
+                   "Batch2__Marseille_01frame0911.jpg",
+                   "Batch2__Marseille_01frame1057.jpg",
+                   "Batch2__Marseille_01frame1168.jpg",
+                   "Batch2__Marseille_01frame1334.jpg",
+                   "Batch2__Nouveau_campus_03frame0660.jpg",
+                   "Batch2__Roissy_02frame0911.jpg"
+                   ]
 
-    return camera_list
+    corresponding_camera = [0, 1, 2, 3, 4, 5, 4, 5, 4, 6, 7]
+
+    camera_lst = [[], [], [], [], [], [], [], []]
+    index = 0
+    image_name_list = os.listdir(path_img_train)
+
+    for image_name in image_name_list:
+        path_img = path_img_train + "/" + image_name
+        path_json = path_json_train + "/" + image_name + ".json"
+        os.rename(path_img, add_zeros(path_img))
+        os.rename(path_json, add_zeros(path_json, file="json"))
+        if index < 11 and image_name == first_names[index]:
+            index += 1
+        camera_lst[corresponding_camera[index-1]].append(image_name)
+    return camera_lst
 
 
 def open_json(json_path):
@@ -134,6 +162,8 @@ def display_detection(img_path, json_path, class_to_detect="People", line_th=2):
 
 
 def gradient(ratio):
+    """ return the RGB value to give for a gradient with ratio in [0,1]
+    """
     ratio = 1.2*ratio+0.1    # shift of the gradient
     RGB = np.array([0., 0., 0.])
     if ratio < 0.2:
@@ -156,6 +186,8 @@ def gradient(ratio):
 
 
 def add_gradient(heat_array):
+    """ transform a array in an array with rgb values with a gradient
+    """
     heat_array = heat_array/np.max(heat_array)
     w, h = np.shape(heat_array)
     heat_array_col = np.zeros((w, h, 3))
@@ -198,57 +230,13 @@ def heatmap(json_path_lst, img_path, class_to_detect="People"):
 
 if __name__ == "__main__":
 
+    #camera_lst = image_differentiation(50000, path_img)
+    camera_lst = camera_list_train_set()
+
     path_img_train = "Detection_Train_Set/Detection_Train_Set_Img"
     path_json_train = "Detection_Train_Set/Detection_Train_Set_Json"
     path_img_test = "Detection_Test_Set/Detection_Test_Set_Img"
     path_json_test = "Detection_Test_Set/Detection_Test_Set_Json"
-
-    first_names = ["Batch2__BioSAV_BIofiltration_18mois_05frame3049.jpg",
-                   "Batch2__Devisubox2_06frame0053.jpg",
-                   "Batch2__Devisubox2_06frame5209.jpg",
-                   "Batch2__Marseille_01frame0530.jpg",
-                   "Batch2__Marseille_01frame0707.jpg",
-                   "Batch2__Marseille_01frame0911.jpg",
-                   "Batch2__Marseille_01frame1057.jpg",
-                   "Batch2__Marseille_01frame1168.jpg",
-                   "Batch2__Marseille_01frame1334.jpg",
-                   "Batch2__Nouveau_campus_03frame0660.jpg",
-                   "Batch2__Roissy_02frame0911.jpg"
-                   ]
-
-    corresponding_camera = [0, 1, 2, 3, 4, 5, 4, 5, 4, 6, 7]
-
-    camera_lst = [[], [], [], [], [], [], [], []]
-    index = 0
-    image_name_list = os.listdir(path_img_train)
-
-    def add_zeros(path, file="jpg"):
-        if file == "jpg":
-            if path[-8] == 'e':
-                path = path[:-7] + '0' + path[-7:]
-            if path[-7] == 'e':
-                path = path[:-6] + "00" + path[-6:]
-        if file == "json":
-            if path[-13] == 'e':
-                path = path[:-12] + '0' + path[-12:]
-            if path[-12] == 'e':
-                path = path[:-11] + "00" + path[-11:]
-        return path
-
-    for image_name in image_name_list:
-        path_img = path_img_train + "/" + image_name
-        path_json = path_json_train + "/" + image_name + ".json"
-        os.rename(path_img, add_zeros(path_img))
-        os.rename(path_json, add_zeros(path_json, file="json"))
-        if image_name == first_names[index]:
-            index += 1
-            print(index)
-        camera_lst[corresponding_camera[index-1]].append(image_name)
-
-
-
-    #camera_lst = image_differentiation(50000, path_img)
-    #camera_lst = sort_images_names(path_img_train)
 
     for camera in camera_lst:
         json_path_list = [path_json_train + "/" + link + ".json" for link in camera]
