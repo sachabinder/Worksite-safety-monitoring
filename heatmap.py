@@ -225,6 +225,7 @@ def heatmap(json_path_lst, img_path, class_to_detect="People"):
     img = Image.open(img_path)
     new_image = Image.blend(heat_img, img, .6)
     new_image.show()
+    return new_image
 
 
 
@@ -238,9 +239,12 @@ if __name__ == "__main__":
     path_img_test = "Detection_Test_Set/Detection_Test_Set_Img"
     path_json_test = "Detection_Test_Set/Detection_Test_Set_Json"
 
+    i = 0
     for camera in camera_lst:
         json_path_list = [path_json_train + "/" + link + ".json" for link in camera]
-        heatmap(json_path_list, path_img_train + "/" + camera[0])
+        image = heatmap(json_path_list, path_img_train + "/" + camera[0])
+        image.save("Detection_Train_Set/heatmaps/heatmap_" + str(i) + ".png", 'png')
+        i += 1
 
     json_test_path = 'Detection_Train_Set/Detection_Train_Set_Json/Batch2__BioSAV_BIofiltration_18mois_05frame3049.jpg.json'
     img_test_path = 'Detection_Train_Set/Detection_Train_Set_Img/Batch2__BioSAV_BIofiltration_18mois_05frame3049.jpg'
