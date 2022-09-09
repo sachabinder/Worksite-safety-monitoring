@@ -134,7 +134,7 @@ def display_detection(img_path, json_path, class_to_detect="People", line_th=2):
 
 
 def gradient(ratio):
-    ratio += 0.1
+    ratio = 1.2*ratio+0.1    # shift of the gradient
     RGB = np.array([0., 0., 0.])
     if ratio < 0.2:
         RGB[2] = 5*ratio
@@ -203,8 +203,52 @@ if __name__ == "__main__":
     path_img_test = "Detection_Test_Set/Detection_Test_Set_Img"
     path_json_test = "Detection_Test_Set/Detection_Test_Set_Json"
 
+    first_names = ["Batch2__BioSAV_BIofiltration_18mois_05frame3049.jpg",
+                   "Batch2__Devisubox2_06frame0053.jpg",
+                   "Batch2__Devisubox2_06frame5209.jpg",
+                   "Batch2__Marseille_01frame0530.jpg",
+                   "Batch2__Marseille_01frame0707.jpg",
+                   "Batch2__Marseille_01frame0911.jpg",
+                   "Batch2__Marseille_01frame1057.jpg",
+                   "Batch2__Marseille_01frame1168.jpg",
+                   "Batch2__Marseille_01frame1334.jpg",
+                   "Batch2__Nouveau_campus_03frame0660.jpg",
+                   "Batch2__Roissy_02frame0911.jpg"
+                   ]
+
+    corresponding_camera = [0, 1, 2, 3, 4, 5, 4, 5, 4, 6, 7]
+
+    camera_lst = [[], [], [], [], [], [], [], []]
+    index = 0
+    image_name_list = os.listdir(path_img_train)
+
+    def add_zeros(path, file="jpg"):
+        if file == "jpg":
+            if path[-8] == 'e':
+                path = path[:-7] + '0' + path[-7:]
+            if path[-7] == 'e':
+                path = path[:-6] + "00" + path[-6:]
+        if file == "json":
+            if path[-13] == 'e':
+                path = path[:-12] + '0' + path[-12:]
+            if path[-12] == 'e':
+                path = path[:-11] + "00" + path[-11:]
+        return path
+
+    for image_name in image_name_list:
+        path_img = path_img_train + "/" + image_name
+        path_json = path_json_train + "/" + image_name + ".json"
+        os.rename(path_img, add_zeros(path_img))
+        os.rename(path_json, add_zeros(path_json, file="json"))
+        if image_name == first_names[index]:
+            index += 1
+            print(index)
+        camera_lst[corresponding_camera[index-1]].append(image_name)
+
+
+
     #camera_lst = image_differentiation(50000, path_img)
-    camera_lst = sort_images_names(path_img_train)
+    #camera_lst = sort_images_names(path_img_train)
 
     for camera in camera_lst:
         json_path_list = [path_json_train + "/" + link + ".json" for link in camera]
