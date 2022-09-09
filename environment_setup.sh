@@ -4,8 +4,14 @@ conda activate wsm_env
 
 # TO BE CHANGE WITH YOUR CONFIG
 conda install pytorch torchvision torchaudio cpuonly -c pytorch -y
+conda install -c conda-forge pytorch-lightning -y
 conda install -c conda-forge opencv -y
 conda install -c conda-forge matplotlib -y
 conda install -c anaconda pillow -y
+conda install -c anaconda pandas -y
+conda install -c conda-forge albumentations -y
+pip install neptune-contrib
+
+pip install neptune-client
 
 
