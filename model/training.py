@@ -34,7 +34,7 @@ from model.utils import (
 from model.faster_rcnn import get_faster_rcnn_resnet,FasterRCNNlightning
 
 #=========== GLOBAL PARAMS ===========
-USE_CACHE = True
+USE_CACHE = False
 LABEL_INDEXES = {
     "__background__":0,
     "People":1,
@@ -61,7 +61,7 @@ class Params:
     EXPERIMENT: str = "worksite-safety-monitoring"
     SAVE_DIR: Optional[str] = "../experiments"  # checkpoints will be saved to cwd (current working directory)
     LOG_MODEL: bool = False  # whether to log the model to neptune after training
-    GPU: Optional[int] = 1  # set to None for cpu training
+    GPU: Optional[int] = None  # set to None for cpu training
     LR: float = 0.001 # learning rage
     PRECISION: int = 32
     CLASSES: int = 7 # number of classes
